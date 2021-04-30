@@ -10,34 +10,89 @@ import SwiftUI
 
 
 struct AddItem: View {
-    @EnvironmentObject var itemsEnv: ItemsEnv
-    @State var itemName: String = ""
-    @State var itemPrice: String = ""
-
+    @EnvironmentObject var classesEnv: ClassesEnv
+    @State var className: String = ""
+    @State var classStart: String = ""
+    @State var classEnd: String = ""
+    @State var classColor: String = ""
     var body: some View {
         VStack {
-            TextField("item name", text: $itemName)
-            TextField("item price", text: $itemPrice)
-                .keyboardType(.decimalPad)
-            
-            Button(action: {
-                guard let price = Double(itemPrice) else {
-                    itemsEnv.showAlert(alertType: .incompleteForm)
-                    return
+            HStack {
+                Text("Add a new class")
+                    .bold()
+                    .foregroundColor(Color("Primary"))
+                    .font(.largeTitle)
+                    .padding()
+                Spacer()
+            }
+            VStack(spacing: 20) {
+                
+                VStack(alignment: .leading) {
+                    Text("Name")
+                        .foregroundColor(Color("Primary"))
+                        .padding(.leading, 10)
+                    TextField("class name", text: $className)
+                        .frame(width: 320, height: 55)
+                        .padding(10)
+                        .background(Color("Primary"))
+                        .cornerRadius(15)
+                        .foregroundColor(Color("BG"))
                 }
-                let item = Item(name: itemName, price: price)
-                itemsEnv.addItem(item: item)
+                
+                VStack(alignment: .leading) {
+                    Text("Color")
+                        .foregroundColor(Color("Primary"))
+                        .padding(.leading, 10)
+                    TextField("class color", text: $classColor)
+                        .frame(width: 320, height: 55)
+                        .padding(10)
+                        .background(Color("Primary"))
+                        .cornerRadius(15)
+                        .foregroundColor(Color("BG"))
+                }
+                
+                VStack(alignment: .leading) {
+                    Text("Starts")
+                        .foregroundColor(Color("Primary"))
+                        .padding(.leading, 10)
+                    TextField("class start date", text: $classStart)
+                        .frame(width: 320, height: 55)
+                        .padding(10)
+                        .background(Color("Primary"))
+                        .cornerRadius(15)
+                        .foregroundColor(Color("BG"))
+                }
+                VStack(alignment: .leading) {
+                    Text("Ends")
+                        .foregroundColor(Color("Primary"))
+                        .padding(.leading, 10)
+                    TextField("class end date", text: $classEnd)
+                        .frame(width: 320, height: 55)
+                        .padding(10)
+                        .background(Color("Primary"))
+                        .cornerRadius(15)
+                        .foregroundColor(Color("BG"))
+                }
+                Button(action: {
+                    
+                    let addedClass = Classes(name: className, start: classStart, ends: classEnd, color: classColor)
+                    classesEnv.addItem(item: addedClass)
 
-            }, label: {
-                Text("Add Item")
-            })
-            Spacer()
-        }
-        .navigationTitle("Add a new item")
-        .padding()
-        .alert(isPresented: $itemsEnv.alertShown, content: {
-            Alert(title: Text(itemsEnv.alertMessage))
+                }, label: {
+                    Text("Add Class")
+                })
+                .frame(width: 330, height: 65)
+                .background(LinearGradient(gradient: Gradient(colors: [Color("Primary"), Color("Green")]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                .cornerRadius(15)
+                .foregroundColor(Color("BG"))
+                .font(.title2)
+                Spacer()
+            }
+            .padding()
+            .alert(isPresented: $classesEnv.alertShown, content: {
+                Alert(title: Text(classesEnv.alertMessage))
         })
+        }
     }
     
 }

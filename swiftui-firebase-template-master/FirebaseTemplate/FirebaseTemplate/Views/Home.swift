@@ -23,18 +23,36 @@ struct Home: View {
     @EnvironmentObject var env: FirebaseEnv
     let itemsEnvironment = ItemsEnv()
     var body: some View {
-        NavigationView {
-            Form {
-                Section(footer: Text("you are signed in!") , content: {
-                    NavigationLink("Add a new item", destination: AddItem()
-                                    .environmentObject(itemsEnvironment))
-                    NavigationLink("List all items", destination: ListItems()
-                                    .environmentObject(itemsEnvironment))
-                })
+//            Form {
+//                Section(footer: Text("you are signed in!") , content: {
+//                    NavigationLink("Add a new class", destination: AddItem()
+//                                    .environmentObject(itemsEnvironment))
+//                   NavigationLink("List all classes", destination: ListItems()
+//                                    .environmentObject(itemsEnvironment))
+//                })
+//            }
+//            .navigationTitle("Home")
+        ZStack {
+            Color("BG").edgesIgnoringSafeArea(.all)
+            VStack(spacing: 50) {
+                NavigationLink("Add a new class", destination: AddItem()
+                                .environmentObject(itemsEnvironment))
+                    .frame(width: 330, height: 65)
+                    .background(LinearGradient(gradient: Gradient(colors: [Color("Primary"), Color("Green")]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                    .cornerRadius(15)
+                    .foregroundColor(Color("BG"))
+                    .font(.title2)
+                
+                NavigationLink("My classes", destination: ListItems()
+                                .environmentObject(itemsEnvironment))
+                    .frame(width: 330, height: 65)
+                    .background(LinearGradient(gradient: Gradient(colors: [Color("Primary"), Color("Green")]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                    .cornerRadius(15)
+                    .foregroundColor(Color("BG"))
+                    .font(.title2)
             }
-            .navigationTitle("Home")
-            .navigationBarItems(trailing: SignOutButton(env: env))
         }
+            .navigationBarItems(trailing: SignOutButton(env: env))
     }
 }
 

@@ -10,18 +10,37 @@ import SwiftUI
 
 struct AuthenticationView: View {
     var body: some View {
-        NavigationView {
-            VStack{
-                NavigationLink(
-                    destination: SignIn(),
-                    label: {Text("Sign in").modifier(SignInModifier())}
-                )
-                NavigationLink(
-                    destination: SignUp(),
-                    label: {Text("Create an account")}
-                )
-            }
-            .navigationTitle("Home")
+        ZStack {
+            Color("BG").edgesIgnoringSafeArea(.all)
+            VStack {
+                Text("Welcome!")
+                    .font(.largeTitle)
+                    .foregroundColor(Color("Primary"))
+                    .padding(.top, 50)
+                Spacer()
+                VStack(spacing: 20) {
+                    NavigationLink(
+                        destination: SignIn(),
+                        label: {Text("Sign in")}
+                    )
+                    .frame(width: 300, height: 75)
+                    .background(Color("Primary"))
+                    .cornerRadius(15)
+                    .foregroundColor(Color("BG"))
+                    .font(.title2)
+                    
+                    NavigationLink(
+                        destination: SignUp(),
+                        label: {Text("Sign Up")}
+                    )
+                    .frame(width: 300, height: 75)
+                    .background(Color("Green"))
+                    .cornerRadius(15)
+                    .foregroundColor(Color("BG"))
+                    .font(.title2)
+                    
+                }
+            }.padding(.vertical, 20)
         }
     }
 }
@@ -40,6 +59,10 @@ struct SignInModifier: ViewModifier{
 
 struct AuthenticationView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthenticationView()
+        Group {
+            AuthenticationView()
+            AuthenticationView()
+                .colorScheme(.dark)
+        }
     }
 }

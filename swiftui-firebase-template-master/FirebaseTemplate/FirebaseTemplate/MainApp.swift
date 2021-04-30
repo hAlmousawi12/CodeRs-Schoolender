@@ -10,6 +10,9 @@ struct MainApp: App {
         WindowGroup {
             MainView()
                 .environmentObject(FirebaseEnv())
+                .environmentObject(ClassesEnv())
+                .accentColor(Color("Primary"))
+                .colorScheme(.light)
         }
     }
 }

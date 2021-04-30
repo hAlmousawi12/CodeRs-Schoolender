@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>304346583724-am78vu1iu0ss1hi9a06qvcmn880bmmg3.apps.googleusercontent.com</string>
+	<string>1031952144143-otq1hijb1i1r0o8lqv1o0kecc5ahviki.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.304346583724-am78vu1iu0ss1hi9a06qvcmn880bmmg3</string>
+	<string>com.googleusercontent.apps.1031952144143-otq1hijb1i1r0o8lqv1o0kecc5ahviki</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAwbyMUmOwcyaJq3G1htV0vYLdnpPS4SAE</string>
+	<string>AIzaSyDYYz_Z_RHfnKvOkTtI1shLyhstqJlAZmo</string>
 	<key>GCM_SENDER_ID</key>
-	<string>304346583724</string>
+	<string>1031952144143</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.khatma.com</string>
+	<string>com.husalmous.Schoolender</string>
 	<key>PROJECT_ID</key>
-	<string>khatma-3e0cb</string>
+	<string>hackathon-kwcodes</string>
 	<key>STORAGE_BUCKET</key>
-	<string>khatma-3e0cb.appspot.com</string>
+	<string>hackathon-kwcodes.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:304346583724:ios:901404680d162d2c124509</string>
-	<key>DATABASE_URL</key>
-	<string>https://khatma-3e0cb.firebaseio.com</string>
+	<string>1:1031952144143:ios:7f18ff0a758091c4e0907a</string>
 </dict>
 </plist>

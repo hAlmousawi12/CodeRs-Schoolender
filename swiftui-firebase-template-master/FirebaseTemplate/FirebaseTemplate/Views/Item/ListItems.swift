@@ -9,19 +9,29 @@
 import SwiftUI
 
 struct ListItems: View {
-    @EnvironmentObject var itemsEnv: ItemsEnv
+    @EnvironmentObject var classesEnv: ClassesEnv
     
     var body: some View {
-        List(itemsEnv.items, id: \.self){ item in
-            VStack(alignment: .leading){
-                Text(item.name).font(.title3)
-                Text("\(item.price)").font(.headline).foregroundColor(.red)
+        ZStack {
+            Color("BG").edgesIgnoringSafeArea(.all)
+            ScrollView {
+                ForEach(classesEnv.items, id: \.self) { clas in
+                    VStack {
+                        Text(clas.name)
+                            .font(.title)
+                            .foregroundColor(Color(clas.color))
+                        
+                        Text("Starts in: \(clas.start)")
+                            .foregroundColor(Color("Green"))
+                        Text("Ends in: \(clas.ends)")
+                            .foregroundColor(Color("Green"))
+                        Divider()
+                    }
+                    .padding(.leading, 10)
+                }
             }
-        }
-        .navigationTitle("Items List")
-        .onAppear(perform: itemsEnv.loadItems)
+        }.onAppear(perform: classesEnv.loadItems)
     }
-
 }
 
 struct ListItems_Previews: PreviewProvider {
