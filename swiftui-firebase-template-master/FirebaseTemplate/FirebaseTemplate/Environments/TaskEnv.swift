@@ -1,5 +1,5 @@
 //
-//  classesEnv.swift
+//  TaskEnv.swift
 //  FirebaseTemplate
 //
 //  Created by Hussain on 4/30/21.
@@ -8,45 +8,34 @@
 
 import SwiftUI
 
-class ClassesEnv: ObservableObject{
+class TaskEnv: ObservableObject{
     let collectionName = "users/\(Networking.getUserId() ?? "")/classes"
-    @Published var items: [Classes] = []
+    @Published var items: [Task] = []
     @Published var alertShown = false
     @Published var alertMessage = ErrorMessages.none.message
     
-    func loadItems(){
-        Networking.getListOf(COLLECTION_NAME: collectionName) { (items: [Classes]) in
+    func loadItems(classId: UUID, lectureId: UUID){
+        Networking.getListOf(COLLECTION_NAME: "\(collectionName)/\(classId)/lectures/\(lectureId)/tasks") { (items: [Task]) in
             self.items = items
         }
     }
     
-    func addItem(item: Classes){
-        let uid = "\(item.id)"
-        Networking.createItem(item, inCollection: collectionName, withDocumentId: uid) {
+    func addItem(item: Task, classId: UUID, lectureId: UUID){
+        Networking.createItem(item, inCollection: "\(collectionName)/\(classId)/lectures/\(lectureId)/tasks") {
             self.showAlert(alertType: .success)
         } fail: { (error) in
             self.showAlert(alertType: .fail)
         }
 
     }
-    
-    func editClass(updatedClass: Classes, id: UUID) {
-        Networking.createItem(updatedClass, inCollection: collectionName, withDocumentId: "\(id)") {
-            self.showAlert(alertType: .success)
-        } fail: { (error) in
-            self.showAlert(alertType: .fail)
-        }
-
-    }
-    
     
     enum ErrorMessages{
         case success, fail, none, incompleteForm
         var message: String {
             switch self {
-            case .success: return "تم إضافة الفصل بنجاح"
+            case .success: return "تم إضافة المهمة بنجاح"
             case .incompleteForm: return "قم بتعبئة جميع البيانات بشكل صحيح"
-            case .fail: return "لم يتم إضافة الفصل، حاول مرة أخرى"
+            case .fail: return "لم يتم إضافة المهمة، حاول مرة أخرى"
             case .none: return ""
             }
         }

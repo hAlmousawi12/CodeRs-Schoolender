@@ -35,7 +35,7 @@ struct Home: View {
         ZStack {
             Color("BG").edgesIgnoringSafeArea(.all)
             VStack(spacing: 50) {
-                NavigationLink("Add a new class", destination: AddItem()
+                NavigationLink("Add a new class", destination: addClass()
                                 .environmentObject(itemsEnvironment))
                     .frame(width: 330, height: 65)
                     .background(LinearGradient(gradient: Gradient(colors: [Color("Primary"), Color("Green")]), startPoint: .topLeading, endPoint: .bottomTrailing))
@@ -43,7 +43,7 @@ struct Home: View {
                     .foregroundColor(Color("BG"))
                     .font(.title2)
                 
-                NavigationLink("My classes", destination: ListItems()
+                NavigationLink("My classes", destination: listClass()
                                 .environmentObject(itemsEnvironment))
                     .frame(width: 330, height: 65)
                     .background(LinearGradient(gradient: Gradient(colors: [Color("Primary"), Color("Green")]), startPoint: .topLeading, endPoint: .bottomTrailing))

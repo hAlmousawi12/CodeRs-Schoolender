@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ListItems: View {
+struct listClass: View {
     @EnvironmentObject var classesEnv: ClassesEnv
     
     var body: some View {
@@ -25,9 +25,9 @@ struct ListItems: View {
                                         .font(.title)
                                         .foregroundColor(Color(clas.color))
                                     
-                                    Text("Day: \(clas.start)")
+                                    Text("Starts: \(clas.start)")
                                         .foregroundColor(Color("Green"))
-                                    Text("Time: \(clas.ends)")
+                                    Text("Ends: \(clas.ends)")
                                         .foregroundColor(Color("Green"))
                                     
                                 }
@@ -44,7 +44,7 @@ struct ListItems: View {
 struct ListItems_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-            ListItems()
+            listClass()
                 .environmentObject(ItemsEnv())
         }
     }

@@ -21,7 +21,26 @@ class LectureEnv: ObservableObject{
     }
     
     func addItem(item: Lecture, id: String){
-        Networking.createItem(item, inCollection: "\(collectionName)/\(id)/lectures") {
+        let uid = "\(item.id)"
+        Networking.createItem(item, inCollection: "\(collectionName)/\(id)/lectures", withDocumentId: uid) {
+            self.showAlert(alertType: .success)
+        } fail: { (error) in
+            self.showAlert(alertType: .fail)
+        }
+
+    }
+    
+//    func editLecture(item: Lecture, classId: String, lectureId: String) {
+//        Networking.createItem(item, inCollection: "\(collectionName)/\(classId)/lectures", withDocumentId: "\(item.id)") {
+//            self.showAlert(alertType: .success)
+//        } fail: { (error) in
+//            self.showAlert(alertType: .fail)
+//        }
+//
+//    }
+    
+    func editLecture(item: Lecture, classId: String, lectureId: String) {
+        Networking.createItem(item, inCollection: "\(collectionName)/\(classId)/lectures", withDocumentId: "\(lectureId)") {
             self.showAlert(alertType: .success)
         } fail: { (error) in
             self.showAlert(alertType: .fail)

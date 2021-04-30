@@ -1,5 +1,5 @@
 //
-//  lectureHome.swift
+//  taskHome.swift
 //  FirebaseTemplate
 //
 //  Created by Hussain on 4/30/21.
@@ -8,27 +8,28 @@
 
 import SwiftUI
 
-struct lectureHome: View {
+struct taskHome: View {
     var classs: Classes
+    var lecture: Lecture
     var body: some View {
         ZStack {
             Color("BG").edgesIgnoringSafeArea(.all)
             VStack(spacing: 50) {
-                NavigationLink("Add a new lecture", destination: addLecture(classs: classs))
+                NavigationLink("Add a new task", destination: addTask(classs: classs, lecture: lecture))
                     .frame(width: 330, height: 65)
                     .background(LinearGradient(gradient: Gradient(colors: [Color("Primary"), Color("Green")]), startPoint: .topLeading, endPoint: .bottomTrailing))
                     .cornerRadius(15)
                     .foregroundColor(Color("BG"))
                     .font(.title2)
                 
-                NavigationLink("My lectures", destination: ListLectures(classs: classs))
+                NavigationLink("My tasks", destination: listTask(classs: classs, lecture: lecture))
                     .frame(width: 330, height: 65)
                     .background(LinearGradient(gradient: Gradient(colors: [Color("Primary"), Color("Green")]), startPoint: .topLeading, endPoint: .bottomTrailing))
                     .cornerRadius(15)
                     .foregroundColor(Color("BG"))
                     .font(.title2)
                 
-                NavigationLink("Edit Class", destination: editClass(classs: classs))
+                NavigationLink("Edit lecture", destination: editLecture(classs: classs, lecture: lecture))
                     .frame(width: 330, height: 65)
                     .background(LinearGradient(gradient: Gradient(colors: [Color("Primary"), Color("Green")]), startPoint: .topLeading, endPoint: .bottomTrailing))
                     .cornerRadius(15)
@@ -39,8 +40,8 @@ struct lectureHome: View {
     }
 }
 
-//struct lectureHome_Previews: PreviewProvider {
+//struct taskHome_Previews: PreviewProvider {
 //    static var previews: some View {
-//        lectureHome()
+//        taskHome()
 //    }
 //}

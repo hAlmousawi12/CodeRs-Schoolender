@@ -1,5 +1,5 @@
 //
-//  Lecture.swift
+//  Task.swift
 //  FirebaseTemplate
 //
 //  Created by Hussain on 4/30/21.
@@ -8,10 +8,7 @@
 
 import Foundation
 
-struct Lecture: Codable, Hashable{
+struct Task: Codable, Hashable{
     var name: String
-    var time: String
     var date: String
-    var color: String
-    var id: UUID
 }

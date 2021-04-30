@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ClassDetails: View {
+struct addLecture: View {
     var classs: Classes
     @EnvironmentObject var lectureEnv: LectureEnv
     @State var lectureName: String = ""
@@ -77,10 +77,9 @@ struct ClassDetails: View {
                     }
                     Button(action: {
                         
-                        let addedLecture = Lecture(name: lectureName, time: lectureTime, date: lectureDate, color: lectureColor)
+                        let addedLecture = Lecture(name: lectureName, time: lectureTime, date: lectureDate, color: lectureColor, id: UUID())
                         let uid = "\(classs.id)"
                         lectureEnv.addItem(item: addedLecture, id: uid)
-//                        lectureEnv
 
                     }, label: {
                         Text("Add lecture")

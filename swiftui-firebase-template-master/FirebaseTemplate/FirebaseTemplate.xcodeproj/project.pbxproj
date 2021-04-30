@@ -12,9 +12,16 @@
 		97284905263B6BD8006FB476 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97284904263B6BD8006FB476 /* Classes.swift */; };
 		97A59DEA263B875D001625C8 /* Lecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DE9263B875D001625C8 /* Lecture.swift */; };
 		97A59DEC263B87BB001625C8 /* lectureEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DEB263B87BB001625C8 /* lectureEnv.swift */; };
-		97A59DEE263B88E2001625C8 /* ClassDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DED263B88E2001625C8 /* ClassDetails.swift */; };
+		97A59DEE263B88E2001625C8 /* addLecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DED263B88E2001625C8 /* addLecture.swift */; };
 		97A59DF0263B8FBF001625C8 /* ListLectures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DEF263B8FBF001625C8 /* ListLectures.swift */; };
 		97A59DF2263B9079001625C8 /* lectureHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DF1263B9079001625C8 /* lectureHome.swift */; };
+		97A59DF4263BA42E001625C8 /* editClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DF3263BA42E001625C8 /* editClass.swift */; };
+		97A59DF6263BA59C001625C8 /* editLecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DF5263BA59C001625C8 /* editLecture.swift */; };
+		97A59DFC263BBBDD001625C8 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DFB263BBBDD001625C8 /* Task.swift */; };
+		97A59DFE263BBC14001625C8 /* TaskEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DFD263BBC14001625C8 /* TaskEnv.swift */; };
+		97A59E00263BBC53001625C8 /* taskHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DFF263BBC53001625C8 /* taskHome.swift */; };
+		97A59E02263BBD5F001625C8 /* addTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59E01263BBD5F001625C8 /* addTask.swift */; };
+		97A59E04263BBD68001625C8 /* listTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59E03263BBD68001625C8 /* listTask.swift */; };
 		D2C079A2259813E70053EDFD /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079A1259813E70053EDFD /* MainApp.swift */; };
 		D2C079AD259815F30053EDFD /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079AC259815F30053EDFD /* SignIn.swift */; };
 		D2C079B2259816BD0053EDFD /* FirebaseEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079B1259816BD0053EDFD /* FirebaseEnv.swift */; };
@@ -22,8 +29,8 @@
 		D2C079BE259819FD0053EDFD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079BD259819FD0053EDFD /* MainView.swift */; };
 		D2C079C225981BDE0053EDFD /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079C125981BDE0053EDFD /* AuthenticationView.swift */; };
 		D2C079C725981C260053EDFD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079C625981C260053EDFD /* Home.swift */; };
-		D2C079CC259822010053EDFD /* AddItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079CB259822000053EDFD /* AddItem.swift */; };
-		D2C079D0259822090053EDFD /* ListItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079CF259822090053EDFD /* ListItems.swift */; };
+		D2C079CC259822010053EDFD /* addClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079CB259822000053EDFD /* addClass.swift */; };
+		D2C079D0259822090053EDFD /* listClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079CF259822090053EDFD /* listClass.swift */; };
 		D2C079D6259841D10053EDFD /* ItemsEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079D5259841D10053EDFD /* ItemsEnv.swift */; };
 		D2C079D9259843330053EDFD /* OptionalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079D8259843330053EDFD /* OptionalState.swift */; };
 		D2C26FDA24662809005E16A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C26FD924662809005E16A3 /* Assets.xcassets */; };
@@ -75,9 +82,16 @@
 		97284904263B6BD8006FB476 /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
 		97A59DE9263B875D001625C8 /* Lecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lecture.swift; sourceTree = "<group>"; };
 		97A59DEB263B87BB001625C8 /* lectureEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lectureEnv.swift; sourceTree = "<group>"; };
-		97A59DED263B88E2001625C8 /* ClassDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetails.swift; sourceTree = "<group>"; };
+		97A59DED263B88E2001625C8 /* addLecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addLecture.swift; sourceTree = "<group>"; };
 		97A59DEF263B8FBF001625C8 /* ListLectures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLectures.swift; sourceTree = "<group>"; };
 		97A59DF1263B9079001625C8 /* lectureHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lectureHome.swift; sourceTree = "<group>"; };
+		97A59DF3263BA42E001625C8 /* editClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editClass.swift; sourceTree = "<group>"; };
+		97A59DF5263BA59C001625C8 /* editLecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editLecture.swift; sourceTree = "<group>"; };
+		97A59DFB263BBBDD001625C8 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		97A59DFD263BBC14001625C8 /* TaskEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEnv.swift; sourceTree = "<group>"; };
+		97A59DFF263BBC53001625C8 /* taskHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskHome.swift; sourceTree = "<group>"; };
+		97A59E01263BBD5F001625C8 /* addTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTask.swift; sourceTree = "<group>"; };
+		97A59E03263BBD68001625C8 /* listTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listTask.swift; sourceTree = "<group>"; };
 		B1FD124CAB9AE9745E818900 /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		D2C079A1259813E70053EDFD /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 		D2C079AC259815F30053EDFD /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
@@ -86,8 +100,8 @@
 		D2C079BD259819FD0053EDFD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D2C079C125981BDE0053EDFD /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		D2C079C625981C260053EDFD /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		D2C079CB259822000053EDFD /* AddItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItem.swift; sourceTree = "<group>"; };
-		D2C079CF259822090053EDFD /* ListItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItems.swift; sourceTree = "<group>"; };
+		D2C079CB259822000053EDFD /* addClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addClass.swift; sourceTree = "<group>"; };
+		D2C079CF259822090053EDFD /* listClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listClass.swift; sourceTree = "<group>"; };
 		D2C079D5259841D10053EDFD /* ItemsEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsEnv.swift; sourceTree = "<group>"; };
 		D2C079D8259843330053EDFD /* OptionalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalState.swift; sourceTree = "<group>"; };
 		D2C26FD024662807005E16A3 /* FirebaseTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +202,35 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		97A59DF7263BBB7B001625C8 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				D2C079CB259822000053EDFD /* addClass.swift */,
+				D2C079CF259822090053EDFD /* listClass.swift */,
+				97A59DF3263BA42E001625C8 /* editClass.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		97A59DF8263BBB9A001625C8 /* lecture */ = {
+			isa = PBXGroup;
+			children = (
+				97A59DED263B88E2001625C8 /* addLecture.swift */,
+				97A59DEF263B8FBF001625C8 /* ListLectures.swift */,
+				97A59DF5263BA59C001625C8 /* editLecture.swift */,
+			);
+			path = lecture;
+			sourceTree = "<group>";
+		};
+		97A59DFA263BBBB7001625C8 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				97A59E01263BBD5F001625C8 /* addTask.swift */,
+				97A59E03263BBD68001625C8 /* listTask.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
 		D2C079A9259815BD0053EDFD /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +249,7 @@
 				D2C079D5259841D10053EDFD /* ItemsEnv.swift */,
 				97284902263B6A55006FB476 /* classesEnv.swift */,
 				97A59DEB263B87BB001625C8 /* lectureEnv.swift */,
+				97A59DFD263BBC14001625C8 /* TaskEnv.swift */,
 			);
 			path = Environments;
 			sourceTree = "<group>";
@@ -223,11 +267,11 @@
 		D2C079C9259821F40053EDFD /* Item */ = {
 			isa = PBXGroup;
 			children = (
-				D2C079CB259822000053EDFD /* AddItem.swift */,
 				97A59DF1263B9079001625C8 /* lectureHome.swift */,
-				97A59DED263B88E2001625C8 /* ClassDetails.swift */,
-				97A59DEF263B8FBF001625C8 /* ListLectures.swift */,
-				D2C079CF259822090053EDFD /* ListItems.swift */,
+				97A59DFF263BBC53001625C8 /* taskHome.swift */,
+				97A59DFA263BBBB7001625C8 /* Task */,
+				97A59DF7263BBB7B001625C8 /* Class */,
+				97A59DF8263BBB9A001625C8 /* lecture */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -355,6 +399,7 @@
 				97A59DE9263B875D001625C8 /* Lecture.swift */,
 				D2C2705624662F3F005E16A3 /* Item.swift */,
 				97284904263B6BD8006FB476 /* Classes.swift */,
+				97A59DFB263BBBDD001625C8 /* Task.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -477,22 +522,27 @@
 			files = (
 				D2C2704C24662C6E005E16A3 /* Networking.swift in Sources */,
 				D2C079BE259819FD0053EDFD /* MainView.swift in Sources */,
-				D2C079D0259822090053EDFD /* ListItems.swift in Sources */,
+				D2C079D0259822090053EDFD /* listClass.swift in Sources */,
 				D2C079C725981C260053EDFD /* Home.swift in Sources */,
 				D2C2705724662F3F005E16A3 /* Item.swift in Sources */,
 				D2C079D9259843330053EDFD /* OptionalState.swift in Sources */,
+				97A59DF4263BA42E001625C8 /* editClass.swift in Sources */,
 				D2C2704B24662C68005E16A3 /* Optional.swift in Sources */,
 				D2C079A2259813E70053EDFD /* MainApp.swift in Sources */,
+				97A59E00263BBC53001625C8 /* taskHome.swift in Sources */,
 				97A59DEC263B87BB001625C8 /* lectureEnv.swift in Sources */,
 				D2C2704924662C68005E16A3 /* Codable.swift in Sources */,
+				97A59DFE263BBC14001625C8 /* TaskEnv.swift in Sources */,
 				97A59DEA263B875D001625C8 /* Lecture.swift in Sources */,
 				D2C2704724662C63005E16A3 /* ValidatePassword.swift in Sources */,
 				D2C079B2259816BD0053EDFD /* FirebaseEnv.swift in Sources */,
-				97A59DEE263B88E2001625C8 /* ClassDetails.swift in Sources */,
+				97A59DEE263B88E2001625C8 /* addLecture.swift in Sources */,
 				D2C079D6259841D10053EDFD /* ItemsEnv.swift in Sources */,
 				D2C2704A24662C68005E16A3 /* Keyboard.swift in Sources */,
 				D2C2704624662C63005E16A3 /* ImageUploader.swift in Sources */,
-				D2C079CC259822010053EDFD /* AddItem.swift in Sources */,
+				97A59E04263BBD68001625C8 /* listTask.swift in Sources */,
+				97A59E02263BBD5F001625C8 /* addTask.swift in Sources */,
+				D2C079CC259822010053EDFD /* addClass.swift in Sources */,
 				D2C079B6259818A20053EDFD /* SignUp.swift in Sources */,
 				97284905263B6BD8006FB476 /* Classes.swift in Sources */,
 				D2C2705224662C9A005E16A3 /* User.swift in Sources */,
@@ -505,6 +555,8 @@
 				D2C2704824662C63005E16A3 /* DateFromatter.swift in Sources */,
 				D2C2704F24662C73005E16A3 /* NetowrkableAuth.swift in Sources */,
 				97A59DF0263B8FBF001625C8 /* ListLectures.swift in Sources */,
+				97A59DF6263BA59C001625C8 /* editLecture.swift in Sources */,
+				97A59DFC263BBBDD001625C8 /* Task.swift in Sources */,
 				D2C2704D24662C6E005E16A3 /* NetworkingImages.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,7 @@
 import SwiftUI
 
 
-struct AddItem: View {
+struct addClass: View {
     @EnvironmentObject var classesEnv: ClassesEnv
     @State var className: String = ""
     @State var classStart: String = ""
@@ -77,7 +77,7 @@ struct AddItem: View {
                     }
                     Button(action: {
                         
-                        let addedClass = Classes(name: className, start: classStart, ends: classEnd, color: classColor)
+                        let addedClass = Classes(name: className, start: classStart, ends: classEnd, color: classColor, id: UUID())
                         classesEnv.addItem(item: addedClass)
 
                     }, label: {
@@ -104,7 +104,7 @@ struct AddItem: View {
 struct AddItem_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-            AddItem()
+            addClass()
                 .environmentObject(ItemsEnv())
         }
     }

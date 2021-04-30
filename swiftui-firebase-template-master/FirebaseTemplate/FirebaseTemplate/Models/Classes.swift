@@ -13,5 +13,5 @@ struct Classes: Codable, Hashable{
     var start: String
     var ends: String
     var color: String
-    var id = UUID()
+    var id: UUID
 }
