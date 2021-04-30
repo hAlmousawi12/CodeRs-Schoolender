@@ -22,6 +22,8 @@
 		97A59E00263BBC53001625C8 /* taskHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DFF263BBC53001625C8 /* taskHome.swift */; };
 		97A59E02263BBD5F001625C8 /* addTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59E01263BBD5F001625C8 /* addTask.swift */; };
 		97A59E04263BBD68001625C8 /* listTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59E03263BBD68001625C8 /* listTask.swift */; };
+		97A59E06263BD964001625C8 /* TB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59E05263BD964001625C8 /* TB.swift */; };
+		97A59E09263BD9AC001625C8 /* calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59E08263BD9AC001625C8 /* calendar.swift */; };
 		D2C079A2259813E70053EDFD /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079A1259813E70053EDFD /* MainApp.swift */; };
 		D2C079AD259815F30053EDFD /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079AC259815F30053EDFD /* SignIn.swift */; };
 		D2C079B2259816BD0053EDFD /* FirebaseEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079B1259816BD0053EDFD /* FirebaseEnv.swift */; };
@@ -92,6 +94,8 @@
 		97A59DFF263BBC53001625C8 /* taskHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskHome.swift; sourceTree = "<group>"; };
 		97A59E01263BBD5F001625C8 /* addTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTask.swift; sourceTree = "<group>"; };
 		97A59E03263BBD68001625C8 /* listTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listTask.swift; sourceTree = "<group>"; };
+		97A59E05263BD964001625C8 /* TB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TB.swift; sourceTree = "<group>"; };
+		97A59E08263BD9AC001625C8 /* calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendar.swift; sourceTree = "<group>"; };
 		B1FD124CAB9AE9745E818900 /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		D2C079A1259813E70053EDFD /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 		D2C079AC259815F30053EDFD /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
@@ -231,11 +235,21 @@
 			path = Task;
 			sourceTree = "<group>";
 		};
+		97A59E07263BD999001625C8 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				97A59E08263BD9AC001625C8 /* calendar.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		D2C079A9259815BD0053EDFD /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				D2C079BD259819FD0053EDFD /* MainView.swift */,
+				97A59E05263BD964001625C8 /* TB.swift */,
 				D2C079C625981C260053EDFD /* Home.swift */,
+				97A59E07263BD999001625C8 /* Calendar */,
 				D2C079C9259821F40053EDFD /* Item */,
 				D2C079C425981C1A0053EDFD /* Authentication */,
 			);
@@ -531,6 +545,7 @@
 				D2C079A2259813E70053EDFD /* MainApp.swift in Sources */,
 				97A59E00263BBC53001625C8 /* taskHome.swift in Sources */,
 				97A59DEC263B87BB001625C8 /* lectureEnv.swift in Sources */,
+				97A59E06263BD964001625C8 /* TB.swift in Sources */,
 				D2C2704924662C68005E16A3 /* Codable.swift in Sources */,
 				97A59DFE263BBC14001625C8 /* TaskEnv.swift in Sources */,
 				97A59DEA263B875D001625C8 /* Lecture.swift in Sources */,
@@ -558,6 +573,7 @@
 				97A59DF6263BA59C001625C8 /* editLecture.swift in Sources */,
 				97A59DFC263BBBDD001625C8 /* Task.swift in Sources */,
 				D2C2704D24662C6E005E16A3 /* NetworkingImages.swift in Sources */,
+				97A59E09263BD9AC001625C8 /* calendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

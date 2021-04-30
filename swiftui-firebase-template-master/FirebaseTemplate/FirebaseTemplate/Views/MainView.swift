@@ -13,7 +13,7 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             if env.signedIn{
-                Home()
+                TB()
             }
             else{
                 AuthenticationView()
