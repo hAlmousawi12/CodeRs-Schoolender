@@ -11,6 +11,7 @@ struct MainApp: App {
             MainView()
                 .environmentObject(FirebaseEnv())
                 .environmentObject(ClassesEnv())
+                .environmentObject(LectureEnv())
                 .accentColor(Color("Primary"))
                 .colorScheme(.light)
         }

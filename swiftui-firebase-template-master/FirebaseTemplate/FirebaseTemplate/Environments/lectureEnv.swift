@@ -1,5 +1,5 @@
 //
-//  classesEnv.swift
+//  lectureEnv.swift
 //  FirebaseTemplate
 //
 //  Created by Hussain on 4/30/21.
@@ -8,26 +8,24 @@
 
 import SwiftUI
 
-class ClassesEnv: ObservableObject{
+class LectureEnv: ObservableObject{
     let collectionName = "users/\(Networking.getUserId() ?? "")/classes"
-    @Published var items: [Classes] = []
+    @Published var items: [Lecture] = []
     @Published var alertShown = false
     @Published var alertMessage = ErrorMessages.none.message
     
-    func loadItems(){
-        Networking.getListOf(COLLECTION_NAME: collectionName) { (items: [Classes]) in
+    func loadItems(id: String){
+        Networking.getListOf(COLLECTION_NAME: "\(collectionName)/\(id)/lectures") { (items: [Lecture]) in
             self.items = items
         }
     }
     
-    func addItem(item: Classes){
-        let uid = "\(item.id)"
-        Networking.createItem(item, inCollection: collectionName, withDocumentId: uid) {
+    func addItem(item: Lecture, id: String){
+        Networking.createItem(item, inCollection: "\(collectionName)/\(id)/lectures") {
             self.showAlert(alertType: .success)
         } fail: { (error) in
             self.showAlert(alertType: .fail)
         }
-
     }
     
     
@@ -35,9 +33,9 @@ class ClassesEnv: ObservableObject{
         case success, fail, none, incompleteForm
         var message: String {
             switch self {
-            case .success: return "تم إضافة الفصل بنجاح"
+            case .success: return "تم إضافة المادة بنجاح"
             case .incompleteForm: return "قم بتعبئة جميع البيانات بشكل صحيح"
-            case .fail: return "لم يتم إضافة الفصل، حاول مرة أخرى"
+            case .fail: return "لم يتم إضافة المادة، حاول مرة أخرى"
             case .none: return ""
             }
         }

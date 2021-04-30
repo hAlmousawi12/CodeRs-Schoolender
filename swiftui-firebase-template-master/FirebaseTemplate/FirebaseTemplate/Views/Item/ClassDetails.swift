@@ -1,26 +1,26 @@
 //
-//  AddItem.swift
+//  CalssDetails.swift
 //  FirebaseTemplate
 //
-//  Created by Omar Alibrahim on 12/27/20.
-//  Copyright © 2020 OMAR. All rights reserved.
+//  Created by Hussain on 4/30/21.
+//  Copyright © 2021 OMAR. All rights reserved.
 //
 
 import SwiftUI
 
-
-struct AddItem: View {
-    @EnvironmentObject var classesEnv: ClassesEnv
-    @State var className: String = ""
-    @State var classStart: String = ""
-    @State var classEnd: String = ""
-    @State var classColor: String = ""
+struct ClassDetails: View {
+    var classs: Classes
+    @EnvironmentObject var lectureEnv: LectureEnv
+    @State var lectureName: String = ""
+    @State var lectureDate: String = ""
+    @State var lectureTime: String = ""
+    @State var lectureColor: String = ""
     var body: some View {
         ZStack {
             Color("BG").edgesIgnoringSafeArea(.all)
             VStack {
                 HStack {
-                    Text("Add a new class")
+                    Text("Add a new lecture")
                         .bold()
                         .foregroundColor(Color("Primary"))
                         .font(.largeTitle)
@@ -33,7 +33,7 @@ struct AddItem: View {
                         Text("Name")
                             .foregroundColor(Color("Primary"))
                             .padding(.leading, 10)
-                        TextField("class name", text: $className)
+                        TextField("lecture name", text: $lectureName)
                             .frame(width: 320, height: 55)
                             .padding(10)
                             .background(Color("Primary"))
@@ -45,7 +45,7 @@ struct AddItem: View {
                         Text("Color")
                             .foregroundColor(Color("Primary"))
                             .padding(.leading, 10)
-                        TextField("class color", text: $classColor)
+                        TextField("lecture color", text: $lectureColor)
                             .frame(width: 320, height: 55)
                             .padding(10)
                             .background(Color("Primary"))
@@ -54,10 +54,10 @@ struct AddItem: View {
                     }
                     
                     VStack(alignment: .leading) {
-                        Text("Starts")
+                        Text("Date")
                             .foregroundColor(Color("Primary"))
                             .padding(.leading, 10)
-                        TextField("class start date", text: $classStart)
+                        TextField("lecture date", text: $lectureDate)
                             .frame(width: 320, height: 55)
                             .padding(10)
                             .background(Color("Primary"))
@@ -65,10 +65,10 @@ struct AddItem: View {
                             .foregroundColor(Color("BG"))
                     }
                     VStack(alignment: .leading) {
-                        Text("Ends")
+                        Text("Time")
                             .foregroundColor(Color("Primary"))
                             .padding(.leading, 10)
-                        TextField("class end date", text: $classEnd)
+                        TextField("lecture time", text: $lectureTime)
                             .frame(width: 320, height: 55)
                             .padding(10)
                             .background(Color("Primary"))
@@ -77,11 +77,13 @@ struct AddItem: View {
                     }
                     Button(action: {
                         
-                        let addedClass = Classes(name: className, start: classStart, ends: classEnd, color: classColor)
-                        classesEnv.addItem(item: addedClass)
+                        let addedLecture = Lecture(name: lectureName, time: lectureTime, date: lectureDate, color: lectureColor)
+                        let uid = "\(classs.id)"
+                        lectureEnv.addItem(item: addedLecture, id: uid)
+//                        lectureEnv
 
                     }, label: {
-                        Text("Add Class")
+                        Text("Add lecture")
                     })
                     .frame(width: 330, height: 65)
                     .background(LinearGradient(gradient: Gradient(colors: [Color("Primary"), Color("Green")]), startPoint: .topLeading, endPoint: .bottomTrailing))
@@ -91,21 +93,16 @@ struct AddItem: View {
                     Spacer()
                 }
                 .padding()
-                .alert(isPresented: $classesEnv.alertShown, content: {
-                    Alert(title: Text(classesEnv.alertMessage))
+                .alert(isPresented: $lectureEnv.alertShown, content: {
+                    Alert(title: Text(lectureEnv.alertMessage))
             })
             }
         }
     }
-    
 }
 
-
-struct AddItem_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView{
-            AddItem()
-                .environmentObject(ItemsEnv())
-        }
-    }
-}
+//struct CalssDetails_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ClassDetails()
+//    }
+//}

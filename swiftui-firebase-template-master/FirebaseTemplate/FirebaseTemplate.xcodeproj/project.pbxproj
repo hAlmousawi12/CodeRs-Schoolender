@@ -10,6 +10,11 @@
 		97284901263B5562006FB476 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97284900263B5562006FB476 /* GoogleService-Info.plist */; };
 		97284903263B6A55006FB476 /* classesEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97284902263B6A55006FB476 /* classesEnv.swift */; };
 		97284905263B6BD8006FB476 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97284904263B6BD8006FB476 /* Classes.swift */; };
+		97A59DEA263B875D001625C8 /* Lecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DE9263B875D001625C8 /* Lecture.swift */; };
+		97A59DEC263B87BB001625C8 /* lectureEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DEB263B87BB001625C8 /* lectureEnv.swift */; };
+		97A59DEE263B88E2001625C8 /* ClassDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DED263B88E2001625C8 /* ClassDetails.swift */; };
+		97A59DF0263B8FBF001625C8 /* ListLectures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DEF263B8FBF001625C8 /* ListLectures.swift */; };
+		97A59DF2263B9079001625C8 /* lectureHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DF1263B9079001625C8 /* lectureHome.swift */; };
 		D2C079A2259813E70053EDFD /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079A1259813E70053EDFD /* MainApp.swift */; };
 		D2C079AD259815F30053EDFD /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079AC259815F30053EDFD /* SignIn.swift */; };
 		D2C079B2259816BD0053EDFD /* FirebaseEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079B1259816BD0053EDFD /* FirebaseEnv.swift */; };
@@ -68,6 +73,11 @@
 		97284900263B5562006FB476 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		97284902263B6A55006FB476 /* classesEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classesEnv.swift; sourceTree = "<group>"; };
 		97284904263B6BD8006FB476 /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		97A59DE9263B875D001625C8 /* Lecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lecture.swift; sourceTree = "<group>"; };
+		97A59DEB263B87BB001625C8 /* lectureEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lectureEnv.swift; sourceTree = "<group>"; };
+		97A59DED263B88E2001625C8 /* ClassDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetails.swift; sourceTree = "<group>"; };
+		97A59DEF263B8FBF001625C8 /* ListLectures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLectures.swift; sourceTree = "<group>"; };
+		97A59DF1263B9079001625C8 /* lectureHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lectureHome.swift; sourceTree = "<group>"; };
 		B1FD124CAB9AE9745E818900 /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		D2C079A1259813E70053EDFD /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 		D2C079AC259815F30053EDFD /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
@@ -195,6 +205,7 @@
 				D2C079B1259816BD0053EDFD /* FirebaseEnv.swift */,
 				D2C079D5259841D10053EDFD /* ItemsEnv.swift */,
 				97284902263B6A55006FB476 /* classesEnv.swift */,
+				97A59DEB263B87BB001625C8 /* lectureEnv.swift */,
 			);
 			path = Environments;
 			sourceTree = "<group>";
@@ -213,6 +224,9 @@
 			isa = PBXGroup;
 			children = (
 				D2C079CB259822000053EDFD /* AddItem.swift */,
+				97A59DF1263B9079001625C8 /* lectureHome.swift */,
+				97A59DED263B88E2001625C8 /* ClassDetails.swift */,
+				97A59DEF263B8FBF001625C8 /* ListLectures.swift */,
 				D2C079CF259822090053EDFD /* ListItems.swift */,
 			);
 			path = Item;
@@ -338,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				D2C2705124662C9A005E16A3 /* User.swift */,
+				97A59DE9263B875D001625C8 /* Lecture.swift */,
 				D2C2705624662F3F005E16A3 /* Item.swift */,
 				97284904263B6BD8006FB476 /* Classes.swift */,
 			);
@@ -468,9 +483,12 @@
 				D2C079D9259843330053EDFD /* OptionalState.swift in Sources */,
 				D2C2704B24662C68005E16A3 /* Optional.swift in Sources */,
 				D2C079A2259813E70053EDFD /* MainApp.swift in Sources */,
+				97A59DEC263B87BB001625C8 /* lectureEnv.swift in Sources */,
 				D2C2704924662C68005E16A3 /* Codable.swift in Sources */,
+				97A59DEA263B875D001625C8 /* Lecture.swift in Sources */,
 				D2C2704724662C63005E16A3 /* ValidatePassword.swift in Sources */,
 				D2C079B2259816BD0053EDFD /* FirebaseEnv.swift in Sources */,
+				97A59DEE263B88E2001625C8 /* ClassDetails.swift in Sources */,
 				D2C079D6259841D10053EDFD /* ItemsEnv.swift in Sources */,
 				D2C2704A24662C68005E16A3 /* Keyboard.swift in Sources */,
 				D2C2704624662C63005E16A3 /* ImageUploader.swift in Sources */,
@@ -482,9 +500,11 @@
 				97284903263B6A55006FB476 /* classesEnv.swift in Sources */,
 				D2C079AD259815F30053EDFD /* SignIn.swift in Sources */,
 				D2C2705024662C73005E16A3 /* NetworkingSignUp.swift in Sources */,
+				97A59DF2263B9079001625C8 /* lectureHome.swift in Sources */,
 				D2C2704524662C63005E16A3 /* ImageLoader.swift in Sources */,
 				D2C2704824662C63005E16A3 /* DateFromatter.swift in Sources */,
 				D2C2704F24662C73005E16A3 /* NetowrkableAuth.swift in Sources */,
+				97A59DF0263B8FBF001625C8 /* ListLectures.swift in Sources */,
 				D2C2704D24662C6E005E16A3 /* NetworkingImages.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

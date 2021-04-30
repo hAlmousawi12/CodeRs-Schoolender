@@ -17,14 +17,21 @@ struct ListItems: View {
             ScrollView {
                 ForEach(classesEnv.items, id: \.self) { clas in
                     VStack {
-                        Text(clas.name)
-                            .font(.title)
-                            .foregroundColor(Color(clas.color))
-                        
-                        Text("Starts in: \(clas.start)")
-                            .foregroundColor(Color("Green"))
-                        Text("Ends in: \(clas.ends)")
-                            .foregroundColor(Color("Green"))
+                        NavigationLink(
+                            destination: lectureHome(classs: clas),
+                            label: {
+                                VStack {
+                                    Text(clas.name)
+                                        .font(.title)
+                                        .foregroundColor(Color(clas.color))
+                                    
+                                    Text("Day: \(clas.start)")
+                                        .foregroundColor(Color("Green"))
+                                    Text("Time: \(clas.ends)")
+                                        .foregroundColor(Color("Green"))
+                                    
+                                }
+                            })
                         Divider()
                     }
                     .padding(.leading, 10)

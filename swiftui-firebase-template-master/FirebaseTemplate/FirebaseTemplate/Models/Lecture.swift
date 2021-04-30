@@ -1,5 +1,5 @@
 //
-//  Classes.swift
+//  Lecture.swift
 //  FirebaseTemplate
 //
 //  Created by Hussain on 4/30/21.
@@ -8,10 +8,9 @@
 
 import Foundation
 
-struct Classes: Codable, Hashable{
+struct Lecture: Codable, Hashable{
     var name: String
-    var start: String
-    var ends: String
+    var time: String
+    var date: String
     var color: String
-    var id = UUID()
 }
