@@ -6,10 +6,10 @@
 //  Copyright © 2020 OMAR. All rights reserved.
 //
 
-import Foundation
-
-
-struct Item: Codable, Hashable{
-    var name: String
-    var price: Double
-}
+//import Foundation
+//
+//
+//struct Item: Codable, Hashable{
+//    var name: String
+//    var price: Double
+//}

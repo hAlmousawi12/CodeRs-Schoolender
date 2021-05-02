@@ -8,8 +8,6 @@ typealias FirebaseUser = Firebase.User
 struct User: Codable{
     var fullname: String = ""
     var email: String = ""
-    var phoneNumber: String = ""
-    
     
 }
 

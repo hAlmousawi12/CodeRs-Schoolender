@@ -37,15 +37,20 @@ struct listClass: View {
                     .padding(.leading, 10)
                 }
             }
-        }.onAppear(perform: classesEnv.loadItems)
+        }.onAppear{
+            classesEnv.loadItems()
+        }
     }
+    
 }
+
+
 
 struct ListItems_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
             listClass()
-                .environmentObject(ItemsEnv())
+//                .environmentObject(ItemsEnv())
         }
     }
 }

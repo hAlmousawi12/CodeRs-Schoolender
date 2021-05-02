@@ -21,38 +21,33 @@ struct SignOutButton: View{
 
 struct Home: View {
     @EnvironmentObject var env: FirebaseEnv
-    let itemsEnvironment = ItemsEnv()
     var body: some View {
-//            Form {
-//                Section(footer: Text("you are signed in!") , content: {
-//                    NavigationLink("Add a new class", destination: AddItem()
-//                                    .environmentObject(itemsEnvironment))
-//                   NavigationLink("List all classes", destination: ListItems()
-//                                    .environmentObject(itemsEnvironment))
-//                })
-//            }
-//            .navigationTitle("Home")
         ZStack {
             Color("BG").edgesIgnoringSafeArea(.all)
             VStack(spacing: 50) {
-                NavigationLink("Add a new class", destination: addClass()
-                                .environmentObject(itemsEnvironment))
+                NavigationLink("Add a new class", destination: addClass())
                     .frame(width: 330, height: 65)
                     .background(LinearGradient(gradient: Gradient(colors: [Color("Primary"), Color("Green")]), startPoint: .topLeading, endPoint: .bottomTrailing))
                     .cornerRadius(15)
                     .foregroundColor(Color("BG"))
                     .font(.title2)
                 
-                NavigationLink("My classes", destination: listClass()
-                                .environmentObject(itemsEnvironment))
+                NavigationLink("My classes", destination: listClass())
                     .frame(width: 330, height: 65)
                     .background(LinearGradient(gradient: Gradient(colors: [Color("Primary"), Color("Green")]), startPoint: .topLeading, endPoint: .bottomTrailing))
                     .cornerRadius(15)
                     .foregroundColor(Color("BG"))
                     .font(.title2)
+                
+                
+//                NavigationLink("Calendar", destination: ContentView())
+//                    .frame(width: 330, height: 65)
+//                    .background(LinearGradient(gradient: Gradient(colors: [Color("Primary"), Color("Green")]), startPoint: .topLeading, endPoint: .bottomTrailing))
+//                    .cornerRadius(15)
+//                    .foregroundColor(Color("BG"))
+//                    .font(.title2)
             }
-        }
-            .navigationBarItems(trailing: SignOutButton(env: env))
+        }.navigationBarItems(trailing: SignOutButton(env: env))
     }
 }
 

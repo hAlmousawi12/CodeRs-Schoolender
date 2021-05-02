@@ -1,16 +1,20 @@
 PODS:
+  - CalendarKit (1.0.4)
   - CodableFirebase (0.2.1)
 
 DEPENDENCIES:
+  - CalendarKit
   - CodableFirebase
 
 SPEC REPOS:
   trunk:
+    - CalendarKit
     - CodableFirebase
 
 SPEC CHECKSUMS:
+  CalendarKit: 5a2db79f29ab67111137643a4ee1852ed04d1a09
   CodableFirebase: 0bf201991eeec35eb9fcd987d271ea463cf34a80
 
-PODFILE CHECKSUM: f66e8f665c2e89a7cd98daf2024ed8eee6c891db
+PODFILE CHECKSUM: 5eaaa5f5afb41e0d2df0c94eaf2248eb8f9e171e
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.0

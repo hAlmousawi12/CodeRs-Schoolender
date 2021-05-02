@@ -10,7 +10,7 @@ import Foundation
 
 struct Lecture: Codable, Hashable{
     var name: String
-    var time: String
+    var time: Double
     var date: String
     var color: String
     var id: UUID

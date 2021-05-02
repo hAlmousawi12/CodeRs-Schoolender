@@ -27,7 +27,7 @@ struct ListLectures: View {
                                     
                                     Text("Day: \(lecture.date)")
                                         .foregroundColor(Color("Green"))
-                                    Text("Time: \(lecture.time)")
+                                    Text("Time: \(Date(timeIntervalSince1970: lecture.time).description)")
                                         .foregroundColor(Color("Green"))
                                 }
                             })

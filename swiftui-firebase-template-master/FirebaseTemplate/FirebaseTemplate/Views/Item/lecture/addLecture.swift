@@ -12,8 +12,8 @@ struct addLecture: View {
     var classs: Classes
     @EnvironmentObject var lectureEnv: LectureEnv
     @State var lectureName: String = ""
-    @State var lectureDate: String = ""
-    @State var lectureTime: String = ""
+    @State var lectureDate = Date()
+    @State var lectureTime = Date()
     @State var lectureColor: String = ""
     var body: some View {
         ZStack {
@@ -54,34 +54,21 @@ struct addLecture: View {
                     }
                     
                     VStack(alignment: .leading) {
-                        Text("Date")
-                            .foregroundColor(Color("Primary"))
-                            .padding(.leading, 10)
-                        TextField("lecture date", text: $lectureDate)
+                        DatePicker("Date: ", selection: $lectureDate, in: Date()..., displayedComponents: .date)
                             .frame(width: 320, height: 55)
                             .padding(10)
-                            .background(Color("Primary"))
                             .cornerRadius(15)
-                            .foregroundColor(Color("BG"))
+                            .foregroundColor(Color("Primary"))
                     }
                     VStack(alignment: .leading) {
-                        Text("Time")
-                            .foregroundColor(Color("Primary"))
-                            .padding(.leading, 10)
-                        TextField("lecture time", text: $lectureTime)
+                        DatePicker("Time: ", selection: $lectureTime, in: Date()..., displayedComponents: .hourAndMinute)
                             .frame(width: 320, height: 55)
                             .padding(10)
-                            .background(Color("Primary"))
                             .cornerRadius(15)
-                            .foregroundColor(Color("BG"))
-                    }
-                    Button(action: {
-                        
-                        let addedLecture = Lecture(name: lectureName, time: lectureTime, date: lectureDate, color: lectureColor, id: UUID())
-                        let uid = "\(classs.id)"
-                        lectureEnv.addItem(item: addedLecture, id: uid)
+                            .foregroundColor(Color("Primary"))
 
-                    }, label: {
+                    }
+                    Button(action: { addLecture() }, label: {
                         Text("Add lecture")
                     })
                     .frame(width: 330, height: 65)
@@ -98,10 +85,25 @@ struct addLecture: View {
             }
         }
     }
-}
+    func addLecture() {
+        let addedLecture = Lecture(name: lectureName, time: lectureTime.timeIntervalSince1970, date: "\(lectureDate.description)", color: lectureColor, id: UUID())
+        let uid = "\(classs.id)"
+        let content = UNMutableNotificationContent()
+        content.title = "You have a lecture in 10 minutes"
+        content.subtitle = "Don't be late"
+        content.sound = UNNotificationSound.default
+        let now = Date()
+        var meow = 1.0
+        meow = (lectureTime.timeIntervalSince1970 + (lectureDate.timeIntervalSince1970 - now.timeIntervalSince1970)  - 600) - now.timeIntervalSince1970
 
-//struct CalssDetails_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ClassDetails()
-//    }
-//}
+        if meow <= 0 {
+            lectureEnv.alertShown = true
+            lectureEnv.alertMessage = "The time you typed is wrong, try again!"
+        } else {
+            lectureEnv.addItem(item: addedLecture, id: uid)
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: meow, repeats: false)
+            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+            UNUserNotificationCenter.current().add(request)
+        }
+    }
+}

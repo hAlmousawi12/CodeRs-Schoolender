@@ -3,13 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		97284901263B5562006FB476 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97284900263B5562006FB476 /* GoogleService-Info.plist */; };
 		97284903263B6A55006FB476 /* classesEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97284902263B6A55006FB476 /* classesEnv.swift */; };
 		97284905263B6BD8006FB476 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97284904263B6BD8006FB476 /* Classes.swift */; };
+		9780CE7A263D1F460006C6CF /* ElegantPages in Frameworks */ = {isa = PBXBuildFile; productRef = 9780CE79263D1F460006C6CF /* ElegantPages */; };
+		9780CE7D263D20960006C6CF /* ElegantCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 9780CE7C263D20960006C6CF /* ElegantCalendar */; };
+		9780CE80263D285B0006C6CF /* ElegantCalendar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9780CE7F263D285B0006C6CF /* ElegantCalendar.xcassets */; };
+		9789C3A5263C4A3F003D2E8F /* CalenderEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9789C3A4263C4A3F003D2E8F /* CalenderEnv.swift */; };
+		9789C3A7263C4A4D003D2E8F /* Calender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9789C3A6263C4A4D003D2E8F /* Calender.swift */; };
+		9789C3A9263C809C003D2E8F /* Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9789C3A8263C809C003D2E8F /* Testing.swift */; };
+		9789C3C9263CF986003D2E8F /* TimeInterval+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9789C3C5263CF980003D2E8F /* TimeInterval+Extension.swift */; };
+		9789C3CA263CF986003D2E8F /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9789C3C6263CF982003D2E8F /* Notifications.swift */; };
+		9789C3CB263CF986003D2E8F /* EKCalendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9789C3C7263CF984003D2E8F /* EKCalendar+Extension.swift */; };
+		9789C3CC263CF986003D2E8F /* EKEvent+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9789C3C8263CF986003D2E8F /* EKEvent+Extension.swift */; };
 		97A59DEA263B875D001625C8 /* Lecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DE9263B875D001625C8 /* Lecture.swift */; };
 		97A59DEC263B87BB001625C8 /* lectureEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DEB263B87BB001625C8 /* lectureEnv.swift */; };
 		97A59DEE263B88E2001625C8 /* addLecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DED263B88E2001625C8 /* addLecture.swift */; };
@@ -22,8 +32,6 @@
 		97A59E00263BBC53001625C8 /* taskHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59DFF263BBC53001625C8 /* taskHome.swift */; };
 		97A59E02263BBD5F001625C8 /* addTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59E01263BBD5F001625C8 /* addTask.swift */; };
 		97A59E04263BBD68001625C8 /* listTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59E03263BBD68001625C8 /* listTask.swift */; };
-		97A59E06263BD964001625C8 /* TB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59E05263BD964001625C8 /* TB.swift */; };
-		97A59E09263BD9AC001625C8 /* calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A59E08263BD9AC001625C8 /* calendar.swift */; };
 		D2C079A2259813E70053EDFD /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079A1259813E70053EDFD /* MainApp.swift */; };
 		D2C079AD259815F30053EDFD /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079AC259815F30053EDFD /* SignIn.swift */; };
 		D2C079B2259816BD0053EDFD /* FirebaseEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079B1259816BD0053EDFD /* FirebaseEnv.swift */; };
@@ -82,6 +90,14 @@
 		97284900263B5562006FB476 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		97284902263B6A55006FB476 /* classesEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classesEnv.swift; sourceTree = "<group>"; };
 		97284904263B6BD8006FB476 /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		9780CE7F263D285B0006C6CF /* ElegantCalendar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ElegantCalendar.xcassets; sourceTree = "<group>"; };
+		9789C3A4263C4A3F003D2E8F /* CalenderEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderEnv.swift; sourceTree = "<group>"; };
+		9789C3A6263C4A4D003D2E8F /* Calender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calender.swift; sourceTree = "<group>"; };
+		9789C3A8263C809C003D2E8F /* Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testing.swift; sourceTree = "<group>"; };
+		9789C3C5263CF980003D2E8F /* TimeInterval+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extension.swift"; sourceTree = "<group>"; };
+		9789C3C6263CF982003D2E8F /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		9789C3C7263CF984003D2E8F /* EKCalendar+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EKCalendar+Extension.swift"; sourceTree = "<group>"; };
+		9789C3C8263CF986003D2E8F /* EKEvent+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EKEvent+Extension.swift"; sourceTree = "<group>"; };
 		97A59DE9263B875D001625C8 /* Lecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lecture.swift; sourceTree = "<group>"; };
 		97A59DEB263B87BB001625C8 /* lectureEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lectureEnv.swift; sourceTree = "<group>"; };
 		97A59DED263B88E2001625C8 /* addLecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addLecture.swift; sourceTree = "<group>"; };
@@ -94,8 +110,6 @@
 		97A59DFF263BBC53001625C8 /* taskHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskHome.swift; sourceTree = "<group>"; };
 		97A59E01263BBD5F001625C8 /* addTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTask.swift; sourceTree = "<group>"; };
 		97A59E03263BBD68001625C8 /* listTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listTask.swift; sourceTree = "<group>"; };
-		97A59E05263BD964001625C8 /* TB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TB.swift; sourceTree = "<group>"; };
-		97A59E08263BD9AC001625C8 /* calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendar.swift; sourceTree = "<group>"; };
 		B1FD124CAB9AE9745E818900 /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		D2C079A1259813E70053EDFD /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 		D2C079AC259815F30053EDFD /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
@@ -164,7 +178,9 @@
 				D2C2702924662A79005E16A3 /* PromisesObjC.framework in Frameworks */,
 				D2C2702224662A79005E16A3 /* GoogleAppMeasurement.framework in Frameworks */,
 				D2C2702D24662A79005E16A3 /* gRPC-C++.framework in Frameworks */,
+				9780CE7D263D20960006C6CF /* ElegantCalendar in Frameworks */,
 				D2C2702A24662A79005E16A3 /* nanopb.framework in Frameworks */,
+				9780CE7A263D1F460006C6CF /* ElegantPages in Frameworks */,
 				D2C2702C24662A79005E16A3 /* abseil.framework in Frameworks */,
 				D2C2702B24662A79005E16A3 /* leveldb-library.framework in Frameworks */,
 				D2C2702424662A79005E16A3 /* FirebaseCore.framework in Frameworks */,
@@ -206,6 +222,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9780CDB0263D10250006C6CF /* clndr */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = clndr;
+			sourceTree = "<group>";
+		};
 		97A59DF7263BBB7B001625C8 /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,21 +258,12 @@
 			path = Task;
 			sourceTree = "<group>";
 		};
-		97A59E07263BD999001625C8 /* Calendar */ = {
-			isa = PBXGroup;
-			children = (
-				97A59E08263BD9AC001625C8 /* calendar.swift */,
-			);
-			path = Calendar;
-			sourceTree = "<group>";
-		};
 		D2C079A9259815BD0053EDFD /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				D2C079BD259819FD0053EDFD /* MainView.swift */,
-				97A59E05263BD964001625C8 /* TB.swift */,
 				D2C079C625981C260053EDFD /* Home.swift */,
-				97A59E07263BD999001625C8 /* Calendar */,
+				9780CDB0263D10250006C6CF /* clndr */,
 				D2C079C9259821F40053EDFD /* Item */,
 				D2C079C425981C1A0053EDFD /* Authentication */,
 			);
@@ -260,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				D2C079B1259816BD0053EDFD /* FirebaseEnv.swift */,
+				9789C3A4263C4A3F003D2E8F /* CalenderEnv.swift */,
 				D2C079D5259841D10053EDFD /* ItemsEnv.swift */,
 				97284902263B6A55006FB476 /* classesEnv.swift */,
 				97A59DEB263B87BB001625C8 /* lectureEnv.swift */,
@@ -293,6 +308,7 @@
 		D2C26FC724662807005E16A3 = {
 			isa = PBXGroup;
 			children = (
+				9780CE7F263D285B0006C6CF /* ElegantCalendar.xcassets */,
 				D2C26FE7246628B8005E16A3 /* iOS */,
 				D2C26FD224662807005E16A3 /* FirebaseTemplate */,
 				D2C26FD124662807005E16A3 /* Products */,
@@ -323,6 +339,7 @@
 				D2C26FD924662809005E16A3 /* Assets.xcassets */,
 				D2C26FDE24662809005E16A3 /* LaunchScreen.storyboard */,
 				D2C26FE124662809005E16A3 /* Info.plist */,
+				9789C3A8263C809C003D2E8F /* Testing.swift */,
 				D2C26FDB24662809005E16A3 /* Preview Content */,
 			);
 			path = FirebaseTemplate;
@@ -368,6 +385,10 @@
 		D2C2703524662C5A005E16A3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9789C3C7263CF984003D2E8F /* EKCalendar+Extension.swift */,
+				9789C3C8263CF986003D2E8F /* EKEvent+Extension.swift */,
+				9789C3C6263CF982003D2E8F /* Notifications.swift */,
+				9789C3C5263CF980003D2E8F /* TimeInterval+Extension.swift */,
 				D2C2703624662C5A005E16A3 /* Codable.swift */,
 				D2C2703724662C5A005E16A3 /* Keyboard.swift */,
 				D2C2703824662C5A005E16A3 /* Optional.swift */,
@@ -414,6 +435,7 @@
 				D2C2705624662F3F005E16A3 /* Item.swift */,
 				97284904263B6BD8006FB476 /* Classes.swift */,
 				97A59DFB263BBBDD001625C8 /* Task.swift */,
+				9789C3A6263C4A4D003D2E8F /* Calender.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -436,6 +458,10 @@
 			dependencies = (
 			);
 			name = FirebaseTemplate;
+			packageProductDependencies = (
+				9780CE79263D1F460006C6CF /* ElegantPages */,
+				9780CE7C263D20960006C6CF /* ElegantCalendar */,
+			);
 			productName = FirebaseTemplate;
 			productReference = D2C26FD024662807005E16A3 /* FirebaseTemplate.app */;
 			productType = "com.apple.product-type.application";
@@ -462,8 +488,23 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				he,
+				"zh-Hans",
+				es,
+				da,
+				it,
+				sv,
+				"zh-Hant",
+				ru,
+				fr,
+				nl,
 			);
 			mainGroup = D2C26FC724662807005E16A3;
+			packageReferences = (
+				9780CE78263D1F460006C6CF /* XCRemoteSwiftPackageReference "ElegantPages" */,
+				9780CE7B263D20960006C6CF /* XCRemoteSwiftPackageReference "ElegantCalendar" */,
+			);
 			productRefGroup = D2C26FD124662807005E16A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -482,6 +523,7 @@
 				97284901263B5562006FB476 /* GoogleService-Info.plist in Resources */,
 				D2C26FDD24662809005E16A3 /* Preview Assets.xcassets in Resources */,
 				D2C26FDA24662809005E16A3 /* Assets.xcassets in Resources */,
+				9780CE80263D285B0006C6CF /* ElegantCalendar.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,8 +587,8 @@
 				D2C079A2259813E70053EDFD /* MainApp.swift in Sources */,
 				97A59E00263BBC53001625C8 /* taskHome.swift in Sources */,
 				97A59DEC263B87BB001625C8 /* lectureEnv.swift in Sources */,
-				97A59E06263BD964001625C8 /* TB.swift in Sources */,
 				D2C2704924662C68005E16A3 /* Codable.swift in Sources */,
+				9789C3CB263CF986003D2E8F /* EKCalendar+Extension.swift in Sources */,
 				97A59DFE263BBC14001625C8 /* TaskEnv.swift in Sources */,
 				97A59DEA263B875D001625C8 /* Lecture.swift in Sources */,
 				D2C2704724662C63005E16A3 /* ValidatePassword.swift in Sources */,
@@ -557,12 +599,15 @@
 				D2C2704624662C63005E16A3 /* ImageUploader.swift in Sources */,
 				97A59E04263BBD68001625C8 /* listTask.swift in Sources */,
 				97A59E02263BBD5F001625C8 /* addTask.swift in Sources */,
+				9789C3C9263CF986003D2E8F /* TimeInterval+Extension.swift in Sources */,
 				D2C079CC259822010053EDFD /* addClass.swift in Sources */,
 				D2C079B6259818A20053EDFD /* SignUp.swift in Sources */,
 				97284905263B6BD8006FB476 /* Classes.swift in Sources */,
 				D2C2705224662C9A005E16A3 /* User.swift in Sources */,
 				D2C079C225981BDE0053EDFD /* AuthenticationView.swift in Sources */,
 				97284903263B6A55006FB476 /* classesEnv.swift in Sources */,
+				9789C3CA263CF986003D2E8F /* Notifications.swift in Sources */,
+				9789C3A7263C4A4D003D2E8F /* Calender.swift in Sources */,
 				D2C079AD259815F30053EDFD /* SignIn.swift in Sources */,
 				D2C2705024662C73005E16A3 /* NetworkingSignUp.swift in Sources */,
 				97A59DF2263B9079001625C8 /* lectureHome.swift in Sources */,
@@ -570,10 +615,12 @@
 				D2C2704824662C63005E16A3 /* DateFromatter.swift in Sources */,
 				D2C2704F24662C73005E16A3 /* NetowrkableAuth.swift in Sources */,
 				97A59DF0263B8FBF001625C8 /* ListLectures.swift in Sources */,
+				9789C3CC263CF986003D2E8F /* EKEvent+Extension.swift in Sources */,
 				97A59DF6263BA59C001625C8 /* editLecture.swift in Sources */,
 				97A59DFC263BBBDD001625C8 /* Task.swift in Sources */,
 				D2C2704D24662C6E005E16A3 /* NetworkingImages.swift in Sources */,
-				97A59E09263BD9AC001625C8 /* calendar.swift in Sources */,
+				9789C3A5263C4A3F003D2E8F /* CalenderEnv.swift in Sources */,
+				9789C3A9263C809C003D2E8F /* Testing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -795,6 +842,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9780CE78263D1F460006C6CF /* XCRemoteSwiftPackageReference "ElegantPages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ThasianX/ElegantPages";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.2;
+			};
+		};
+		9780CE7B263D20960006C6CF /* XCRemoteSwiftPackageReference "ElegantCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ThasianX/ElegantCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9780CE79263D1F460006C6CF /* ElegantPages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9780CE78263D1F460006C6CF /* XCRemoteSwiftPackageReference "ElegantPages" */;
+			productName = ElegantPages;
+		};
+		9780CE7C263D20960006C6CF /* ElegantCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9780CE7B263D20960006C6CF /* XCRemoteSwiftPackageReference "ElegantCalendar" */;
+			productName = ElegantCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2C26FC824662807005E16A3 /* Project object */;
 }

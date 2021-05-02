@@ -3,69 +3,208 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1EF5A090A24C3563AECC79F552978ED5 /* Pods-FirebaseTemplate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCC7694754B2EE901086C94DE914CC3 /* Pods-FirebaseTemplate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39656CCF618C5D5348D143D98CB8A02C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		3F4BFD1729B4AA123265B79C6C522C09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		4706B5C1199769368CCCAE71DA4B2D48 /* FirebaseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B148ED1BA1AF1F499E763ED1A2411DE /* FirebaseDecoder.swift */; };
-		495DF828C1AF627FBFE643262EB44EED /* FirestoreEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2523C4214495DFB9382AC11787C944 /* FirestoreEncoder.swift */; };
-		496841BD4BF3A5D3124798FFDB672ACB /* CodableFirebase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5F7A077DD92657D6C7EEA21503AE9F /* CodableFirebase-dummy.m */; };
-		71A110BB468C3036A87A3230E5C7E891 /* FirebaseEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C1BFAAF301BE2FF06540DF8ECB1031 /* FirebaseEncoder.swift */; };
-		8F074EF7AD311BF67B4EA8FBE495D829 /* Pods-FirebaseTemplate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC5147F33F85708C78BDE617E5EC29E /* Pods-FirebaseTemplate-dummy.m */; };
-		A507FE0F5988DA4DBFF17075004D954D /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B0C4721B2D8519AE0677C3490E4C6B /* Encoder.swift */; };
-		D0A4065420FD2C1BE7E24D3B936F28DC /* FirestoreDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9DA1FD4555BB6048774B09900A6662 /* FirestoreDecoder.swift */; };
-		D6B1D0206F9583D5CE8FD99362BB47D4 /* CodableFirebase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5E99B3BA56A80CA8D19C30A97834A4 /* CodableFirebase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA990EEFEDD324E7849FFF378FF48D6E /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD20A75C4B9C4C54E5DD7251E4BB900F /* Decoder.swift */; };
+		035E94A1FE2AA86C0298573A1E34887A /* Pods-FirebaseTemplate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCC7694754B2EE901086C94DE914CC3 /* Pods-FirebaseTemplate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04483B89E9E1D8DA99F6AF43381F44FF /* EventDescriptor+DateTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785CB5548898BE3048D2834ABFED6E63 /* EventDescriptor+DateTools.swift */; };
+		076364BD98A980B9AD892DC979038281 /* DaySymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E2AEB278F6523E05E79CCB04571154 /* DaySymbolsView.swift */; };
+		087EEF6B9BEF5988941A58A45983344E /* EventLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9051CFF39A9F112A488CA0A2D3DC41C4 /* EventLayoutAttributes.swift */; };
+		11CD140574B9D62100E4F389DE034A5C /* DaySelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776685717B8F3A37BE027F389EB91BA0 /* DaySelectorController.swift */; };
+		120F73851BC85F08A4B123E99AB32714 /* Date+DateOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF93141F7226D5C108E312DAA63BA37 /* Date+DateOnly.swift */; };
+		17042F3195D64EFF761BE8425C65E12D /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A26C28A5D078B4156B7D23D53FBBA0E6 /* it.lproj */; };
+		17DB396CC1E8399FA4B47EB4C51F8320 /* EventDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8082F7E579C85AEA3C2C0C83EE36D334 /* EventDescriptor.swift */; };
+		1E21B53E3706F59A07B2E04372FBBAF1 /* SnapTo15MinuteIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B90ED4012E5E5222DEB325EB57EBD1 /* SnapTo15MinuteIntervals.swift */; };
+		1FD15270EEDE67DEC6DBFCFAABC3BF2B /* DateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9121E37B6CF3C5154DA426A843F1767A /* DateLabel.swift */; };
+		22696CDFDA284C062A01E442746F2772 /* Value+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61EC561B836FBC00E2272A374FD95DB /* Value+Clamped.swift */; };
+		2F47C033939CFFF826CD8F1BB15A6BA1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E223257F5E00C890F01FED40D94575 /* Event.swift */; };
+		30676CFB4F8B01A43703C2DDF28B85B9 /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A03B87759DEF8DA51D3AE57338341DBE /* zh-Hant.lproj */; };
+		3CF9E82110BF37FEE6C53EB0C97AED8E /* SwipeLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425ACBF11A7400784CF0CF84F818218 /* SwipeLabelView.swift */; };
+		3E17E112F61A6948C05CD41CF257ADB3 /* EventDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162211D0F97A365EDD725B9C9EED91F /* EventDataSource.swift */; };
+		462237FF0745CE6C4FEDCFB57BF5D47E /* Pods-FirebaseTemplate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC5147F33F85708C78BDE617E5EC29E /* Pods-FirebaseTemplate-dummy.m */; };
+		4706B5C1199769368CCCAE71DA4B2D48 /* FirebaseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAD6A7D7B41D08ED84B68F2FF1E1453 /* FirebaseDecoder.swift */; };
+		489EEC37FAB12C8D79C69FFC3B6419F9 /* View+StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A1CBEF39D8012E1AA5C4652923CB0 /* View+StackView.swift */; };
+		495DF828C1AF627FBFE643262EB44EED /* FirestoreEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D303DFAEE82DC9F028A6BD68933971 /* FirestoreEncoder.swift */; };
+		496841BD4BF3A5D3124798FFDB672ACB /* CodableFirebase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D033C50A59E1B73B5F5B7843418E5C8B /* CodableFirebase-dummy.m */; };
+		500A73CC267D002E18E04FB52D98D209 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF52EAC95332418EA96692C5C84066 /* DayView.swift */; };
+		57E7C33794C4EA69653A26BFC1E82B79 /* ReusePool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502E02023EAA042A055C0679C7F8DF9C /* ReusePool.swift */; };
+		58BA0666C6E49395D127BC404883369E /* TimelinePagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C97F2AFCDE6860DA40E260D859DF766 /* TimelinePagerView.swift */; };
+		5CCCA7624F083975761A53DD73D55AA8 /* EventEditingSnappingBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B82483F2477E8C40C0713148EDEB4 /* EventEditingSnappingBehavior.swift */; };
+		5E988BF0E187A08DA37610E8B805DF08 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D45FE0F9CBD98539897C983A062AFA /* TimelineView.swift */; };
+		5F112B13EB2BF65800C294391799DF71 /* UIColor+SystemColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990D88263CCF2BDB3431A471A838FBCB /* UIColor+SystemColors.swift */; };
+		630FA2A10DA73EC7D0853DC2335709DE /* Array+Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E99926D16AD5DA118210FCA150DEFB9 /* Array+Shift.swift */; };
+		6B42AACA15932993F103F17E28DF64B4 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2E5A32AA8FCE3E5FE18748DE597FC5C7 /* de.lproj */; };
+		71A110BB468C3036A87A3230E5C7E891 /* FirebaseEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C40F3A1D635665CEC2029B1EA1FCD /* FirebaseEncoder.swift */; };
+		77F995163069A8E90040396894737BAD /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D84BDBB79EDD4F1573ABAC2C699A44F7 /* nl.lproj */; };
+		783EBB2707B4AF9CD81906A8297B6F8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7901671E245EF65A676D15ED9D60B400 /* DayDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298F50EC016BF85882A8632B2917473 /* DayDateCell.swift */; };
+		818F0144157CF6A9ED8D13541BBA8076 /* TimelineContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450FFC0D83D423117CB2C2B04A67912 /* TimelineContainer.swift */; };
+		83788A7A607F2CE71B8B2563F7A544FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		84D9CED67E02D9DBBE38F2E128758F8D /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C5EC1BED1BDA4A1A21DF5BE33510FEFF /* ru.lproj */; };
+		86222FE257981E64CB28B14DC24CF4AC /* CalendarKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFADFC87A36969B73D7B75193BA33E71 /* CalendarKit-dummy.m */; };
+		8CD2F2F8CE0B248609D29CC87BE1DA96 /* CalendarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4098CFA159FE3D18B9A9136C59EE0 /* CalendarStyle.swift */; };
+		8FC94170032F01AB1CD94DE99251E592 /* CalendarKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B05E5205FD3E17BFACDC0D0514428D1C /* CalendarKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95AC59330EABDF0D43444E5F4FA97E40 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F7EE2859131E06A84195C265D8D752E7 /* fr.lproj */; };
+		A1121F344DF0774527B5896B05EC1723 /* CurrentTimeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8380B3DD078AE8C04A752A5C96322C8 /* CurrentTimeIndicator.swift */; };
+		A34C2F256093A0338C49B314A1166FE1 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 83FDB2F9A16CFEF8D40648F74F22BE53 /* en.lproj */; };
+		A501F6AB864B3660B505B7073A9DAB14 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08700BC2C13DA475B49E10F0B623234 /* Localization.swift */; };
+		A507FE0F5988DA4DBFF17075004D954D /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A980FCDC4E80BD250610F1ACE981142E /* Encoder.swift */; };
+		A799BD4CF867FD84ABA91C231992855F /* sv.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 920702A2A92134206B5A8DE47FE9CAEF /* sv.lproj */; };
+		AF43A11050E063CE6402086BEB815ED2 /* da.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 67F9A5C40FFCD7FAF7F32DBA9283DE1A /* da.lproj */; };
+		B13E2A417CD09BDBAC8E8245A4682BB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B51F0E9F7FF2F05B080483AE317C0139 /* Locale+24Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB01580911082B79A4650C04AEBBB0C /* Locale+24Hour.swift */; };
+		B5EDAC9274BD4215B2D8E2EC0EAF04BF /* AllDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67C3B5F5ED86CA90FBCF2DE8F4F7B74 /* AllDayView.swift */; };
+		B932C5C5DA325958F6199DC12FAFC851 /* DayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3CC016F8C315221BCB03D1136253E8 /* DayHeaderView.swift */; };
+		D0A4065420FD2C1BE7E24D3B936F28DC /* FirestoreDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EFAF0B2DBE4C262A84DA07F4D7DEF3 /* FirestoreDecoder.swift */; };
+		D2574F637E4B80FB113907C04F4343E2 /* he.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 223AC36654785700AC6B503F20CEEAF3 /* he.lproj */; };
+		D6A0494E4036EC3A7D72AB2EA6B2D09A /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282A2080D64087C37845F0926A7F4282 /* EventView.swift */; };
+		D6B1D0206F9583D5CE8FD99362BB47D4 /* CodableFirebase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10C2BE2A4683F043D9335C86DFAA023D /* CodableFirebase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC97FD9CDB1F9C53DED17CBD2BA27DD1 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C7169653421B282BF0FD49EAE5AEDF9C /* zh-Hans.lproj */; };
+		E335557B1B6DC6F726B686E201C084B2 /* CalendarKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A828DFCF7CF3511DA7A8E0C6889A3180 /* CalendarKit.bundle */; };
+		E6901D53539AEC8DD05F013B96DC3A87 /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B3E59253602B7DFF2FA30B850CA9569F /* es.lproj */; };
+		E7064DD89D3EF1EB73DDFA22AD361614 /* DayViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76AADA060DC59CFDC23B0FA4A6D26DD /* DayViewState.swift */; };
+		E7C41F90ED6F046C016889A8CB5F6336 /* TimeStringsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A8234662BC235C724C1B84EF8E17C9 /* TimeStringsFactory.swift */; };
+		EEEE63FE9FD0AC26A1956E8ED73755E9 /* TimelineContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B9E89C87873F43539CCE4BD7AD4850 /* TimelineContainerController.swift */; };
+		F6ABA6C6474738B8BFC658167E6FDD55 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B572DE30836CB0D051284A9DF8E8CD8 /* DayViewController.swift */; };
+		FA990EEFEDD324E7849FFF378FF48D6E /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689304363134CB5617867B301E982B33 /* Decoder.swift */; };
+		FE356CDE285A4A859CA357A6F51EF745 /* EventResizeHandleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352AFDA4352D0A795AA6D218244E2C80 /* EventResizeHandleView.swift */; };
+		FEAC5DAAA678BA0792FC8F2F24F1BAE0 /* EventResizeHandleDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7207E009F4AA5851BE50EBE4FFFC03 /* EventResizeHandleDotView.swift */; };
+		FEDB303D24FBEA5FB97D25FB93A1C13F /* DaySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837F5D48A89F01EB8BEFFC7F49121D70 /* DaySelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		216620130DE22A4A7B030602DF0536B0 /* PBXContainerItemProxy */ = {
+		2BD5B79A57B3C66E17EEB9A658309C41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E348382FA7E1F8A639AFBFF3F8C4FC04;
 			remoteInfo = CodableFirebase;
 		};
+		369A30175C3C7D788335410190E79AB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1874CCA159285F971FAABEC7E5097823;
+			remoteInfo = "CalendarKit-CalendarKit";
+		};
+		8BA6DF8B05E28E9190F0212A9EE6A2D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04904EE15AFF91054117F3F364502338;
+			remoteInfo = CalendarKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07E2AEB278F6523E05E79CCB04571154 /* DaySymbolsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DaySymbolsView.swift; path = Source/Header/DaySymbolsView.swift; sourceTree = "<group>"; };
+		0E3CC016F8C315221BCB03D1136253E8 /* DayHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DayHeaderView.swift; path = Source/Header/DayHeaderView.swift; sourceTree = "<group>"; };
+		0FAD6A7D7B41D08ED84B68F2FF1E1453 /* FirebaseDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirebaseDecoder.swift; path = CodableFirebase/FirebaseDecoder.swift; sourceTree = "<group>"; };
+		10C2BE2A4683F043D9335C86DFAA023D /* CodableFirebase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableFirebase-umbrella.h"; sourceTree = "<group>"; };
+		12A8234662BC235C724C1B84EF8E17C9 /* TimeStringsFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeStringsFactory.swift; path = Source/Timeline/TimeStringsFactory.swift; sourceTree = "<group>"; };
 		178CF7B1DD812F16410D2D44A41352BD /* Pods-FirebaseTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FirebaseTemplate.release.xcconfig"; sourceTree = "<group>"; };
+		1A3B72FE66FC6B9B9A0AD00BE81B46FC /* CalendarKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CalendarKit.debug.xcconfig; sourceTree = "<group>"; };
+		1C97F2AFCDE6860DA40E260D859DF766 /* TimelinePagerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimelinePagerView.swift; path = Source/Timeline/TimelinePagerView.swift; sourceTree = "<group>"; };
+		1C9B93A7E8CE07404B706239A84C5DCE /* CalendarKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CalendarKit-Info.plist"; sourceTree = "<group>"; };
+		1EB01580911082B79A4650C04AEBBB0C /* Locale+24Hour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Locale+24Hour.swift"; path = "Source/Extensions/Locale+24Hour.swift"; sourceTree = "<group>"; };
+		1F57286F276A19DCA2DA2CDC08E063FD /* CalendarKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CalendarKit.release.xcconfig; sourceTree = "<group>"; };
 		1FC5147F33F85708C78BDE617E5EC29E /* Pods-FirebaseTemplate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FirebaseTemplate-dummy.m"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		223AC36654785700AC6B503F20CEEAF3 /* he.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = he.lproj; path = Source/Localizations/he.lproj; sourceTree = "<group>"; };
+		282A2080D64087C37845F0926A7F4282 /* EventView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventView.swift; path = Source/Timeline/EventView.swift; sourceTree = "<group>"; };
+		2E5A32AA8FCE3E5FE18748DE597FC5C7 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = Source/Localizations/de.lproj; sourceTree = "<group>"; };
+		2FD4F6699FC38DDBD3807A91AC1CA70B /* CodableFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableFirebase.debug.xcconfig; sourceTree = "<group>"; };
 		341280964AD915F7A468202003E77CCB /* Pods-FirebaseTemplate-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FirebaseTemplate-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3425ACBF11A7400784CF0CF84F818218 /* SwipeLabelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeLabelView.swift; path = Source/Header/SwipeLabelView.swift; sourceTree = "<group>"; };
+		352AFDA4352D0A795AA6D218244E2C80 /* EventResizeHandleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventResizeHandleView.swift; path = Source/Timeline/EventResizeHandleView.swift; sourceTree = "<group>"; };
+		38EFAF0B2DBE4C262A84DA07F4D7DEF3 /* FirestoreDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirestoreDecoder.swift; path = CodableFirebase/FirestoreDecoder.swift; sourceTree = "<group>"; };
+		3A7207E009F4AA5851BE50EBE4FFFC03 /* EventResizeHandleDotView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventResizeHandleDotView.swift; path = Source/Timeline/EventResizeHandleDotView.swift; sourceTree = "<group>"; };
+		3B572DE30836CB0D051284A9DF8E8CD8 /* DayViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DayViewController.swift; path = Source/DayViewController.swift; sourceTree = "<group>"; };
 		40A20036A26938A73EB725D1FA820A75 /* Pods-FirebaseTemplate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FirebaseTemplate.modulemap"; sourceTree = "<group>"; };
+		40E13EA3A301E0D2B382069AE90A9271 /* CodableFirebase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CodableFirebase.modulemap; sourceTree = "<group>"; };
 		4391BE1E7195C165B8EFB7E6976268EE /* Pods-FirebaseTemplate-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FirebaseTemplate-acknowledgements.plist"; sourceTree = "<group>"; };
-		475EA0F82A5E33C6AF6965CDB66F68A3 /* CodableFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableFirebase.release.xcconfig; sourceTree = "<group>"; };
 		4A94FC58A21534580DADDEF0DD4CCDB9 /* CodableFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CodableFirebase.framework; path = CodableFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		58684AA03E8976981239BC7DBBA42B30 /* CodableFirebase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableFirebase-prefix.pch"; sourceTree = "<group>"; };
-		6C2523C4214495DFB9382AC11787C944 /* FirestoreEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirestoreEncoder.swift; path = CodableFirebase/FirestoreEncoder.swift; sourceTree = "<group>"; };
+		502E02023EAA042A055C0679C7F8DF9C /* ReusePool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReusePool.swift; path = Source/Timeline/ReusePool.swift; sourceTree = "<group>"; };
+		50F4098CFA159FE3D18B9A9136C59EE0 /* CalendarStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarStyle.swift; path = Source/CalendarStyle.swift; sourceTree = "<group>"; };
+		51E2BA9C545E86C4AB50BBE4F3D747A9 /* ResourceBundle-CalendarKit-CalendarKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CalendarKit-CalendarKit-Info.plist"; sourceTree = "<group>"; };
+		67F9A5C40FFCD7FAF7F32DBA9283DE1A /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = da.lproj; path = Source/Localizations/da.lproj; sourceTree = "<group>"; };
+		689304363134CB5617867B301E982B33 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = CodableFirebase/Decoder.swift; sourceTree = "<group>"; };
+		6DF93141F7226D5C108E312DAA63BA37 /* Date+DateOnly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+DateOnly.swift"; path = "Source/Extensions/Date+DateOnly.swift"; sourceTree = "<group>"; };
 		6EB9E0010C927600424072AD4D41497F /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
+		6F7D47B3E239EA3D8D10DEB990A39B29 /* CalendarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CalendarKit.framework; path = CalendarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		776685717B8F3A37BE027F389EB91BA0 /* DaySelectorController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DaySelectorController.swift; path = Source/Header/DaySelector/DaySelectorController.swift; sourceTree = "<group>"; };
+		785CB5548898BE3048D2834ABFED6E63 /* EventDescriptor+DateTools.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "EventDescriptor+DateTools.swift"; path = "Source/Extensions/EventDescriptor+DateTools.swift"; sourceTree = "<group>"; };
 		7A0E44EFA9F246815E25992F9EE7515D /* Pods-FirebaseTemplate-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FirebaseTemplate-Info.plist"; sourceTree = "<group>"; };
-		7B148ED1BA1AF1F499E763ED1A2411DE /* FirebaseDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirebaseDecoder.swift; path = CodableFirebase/FirebaseDecoder.swift; sourceTree = "<group>"; };
 		8012AB43E3CD02B54A9DC696E868C582 /* Pods-FirebaseTemplate-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FirebaseTemplate-frameworks.sh"; sourceTree = "<group>"; };
-		81B0C4721B2D8519AE0677C3490E4C6B /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = CodableFirebase/Encoder.swift; sourceTree = "<group>"; };
+		8082F7E579C85AEA3C2C0C83EE36D334 /* EventDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventDescriptor.swift; path = Source/Timeline/EventDescriptor.swift; sourceTree = "<group>"; };
+		837F5D48A89F01EB8BEFFC7F49121D70 /* DaySelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DaySelector.swift; path = Source/Header/DaySelector/DaySelector.swift; sourceTree = "<group>"; };
+		83FDB2F9A16CFEF8D40648F74F22BE53 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = Source/Localizations/en.lproj; sourceTree = "<group>"; };
+		8450FFC0D83D423117CB2C2B04A67912 /* TimelineContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimelineContainer.swift; path = Source/Timeline/TimelineContainer.swift; sourceTree = "<group>"; };
 		8FCC7694754B2EE901086C94DE914CC3 /* Pods-FirebaseTemplate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FirebaseTemplate-umbrella.h"; sourceTree = "<group>"; };
+		9051CFF39A9F112A488CA0A2D3DC41C4 /* EventLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventLayoutAttributes.swift; path = Source/Timeline/EventLayoutAttributes.swift; sourceTree = "<group>"; };
+		9121E37B6CF3C5154DA426A843F1767A /* DateLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateLabel.swift; path = Source/Header/DaySelector/DateLabel.swift; sourceTree = "<group>"; };
+		920702A2A92134206B5A8DE47FE9CAEF /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = sv.lproj; path = Source/Localizations/sv.lproj; sourceTree = "<group>"; };
+		95E223257F5E00C890F01FED40D94575 /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Source/Timeline/Event.swift; sourceTree = "<group>"; };
+		990D88263CCF2BDB3431A471A838FBCB /* UIColor+SystemColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+SystemColors.swift"; path = "Source/Extensions/UIColor+SystemColors.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B095273A490C49951F51010B277DB8C7 /* CodableFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableFirebase.debug.xcconfig; sourceTree = "<group>"; };
-		BA5E99B3BA56A80CA8D19C30A97834A4 /* CodableFirebase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableFirebase-umbrella.h"; sourceTree = "<group>"; };
-		C5BD22CC6B2FBCBB6EBDBEEB1B9AAE0D /* CodableFirebase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CodableFirebase.modulemap; sourceTree = "<group>"; };
-		C6C1BFAAF301BE2FF06540DF8ECB1031 /* FirebaseEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirebaseEncoder.swift; path = CodableFirebase/FirebaseEncoder.swift; sourceTree = "<group>"; };
-		CC692CCA5E0D46E68F4F33B538735B32 /* CodableFirebase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CodableFirebase-Info.plist"; sourceTree = "<group>"; };
-		CE9DA1FD4555BB6048774B09900A6662 /* FirestoreDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirestoreDecoder.swift; path = CodableFirebase/FirestoreDecoder.swift; sourceTree = "<group>"; };
+		9E99926D16AD5DA118210FCA150DEFB9 /* Array+Shift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Shift.swift"; path = "Source/Extensions/Array+Shift.swift"; sourceTree = "<group>"; };
+		9EEF52EAC95332418EA96692C5C84066 /* DayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DayView.swift; path = Source/DayView.swift; sourceTree = "<group>"; };
+		A010F8ACFFD06CC0CEA1F041FA587935 /* CodableFirebase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableFirebase-prefix.pch"; sourceTree = "<group>"; };
+		A03B87759DEF8DA51D3AE57338341DBE /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "Source/Localizations/zh-Hant.lproj"; sourceTree = "<group>"; };
+		A0B2D12B9EF45E85E59A857628583964 /* CalendarKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CalendarKit.modulemap; sourceTree = "<group>"; };
+		A0B90ED4012E5E5222DEB325EB57EBD1 /* SnapTo15MinuteIntervals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapTo15MinuteIntervals.swift; path = Source/Timeline/SnapTo15MinuteIntervals.swift; sourceTree = "<group>"; };
+		A26C28A5D078B4156B7D23D53FBBA0E6 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = it.lproj; path = Source/Localizations/it.lproj; sourceTree = "<group>"; };
+		A6B9E89C87873F43539CCE4BD7AD4850 /* TimelineContainerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimelineContainerController.swift; path = Source/Timeline/TimelineContainerController.swift; sourceTree = "<group>"; };
+		A828DFCF7CF3511DA7A8E0C6889A3180 /* CalendarKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CalendarKit.bundle; path = "CalendarKit-CalendarKit.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A980FCDC4E80BD250610F1ACE981142E /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = CodableFirebase/Encoder.swift; sourceTree = "<group>"; };
+		AD7B82483F2477E8C40C0713148EDEB4 /* EventEditingSnappingBehavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventEditingSnappingBehavior.swift; path = Source/Timeline/EventEditingSnappingBehavior.swift; sourceTree = "<group>"; };
+		B05E5205FD3E17BFACDC0D0514428D1C /* CalendarKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CalendarKit-umbrella.h"; sourceTree = "<group>"; };
+		B08700BC2C13DA475B49E10F0B623234 /* Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Localization.swift; path = Source/Localization.swift; sourceTree = "<group>"; };
+		B3D303DFAEE82DC9F028A6BD68933971 /* FirestoreEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirestoreEncoder.swift; path = CodableFirebase/FirestoreEncoder.swift; sourceTree = "<group>"; };
+		B3E59253602B7DFF2FA30B850CA9569F /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = Source/Localizations/es.lproj; sourceTree = "<group>"; };
+		B5D45FE0F9CBD98539897C983A062AFA /* TimelineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimelineView.swift; path = Source/Timeline/TimelineView.swift; sourceTree = "<group>"; };
+		B76AADA060DC59CFDC23B0FA4A6D26DD /* DayViewState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DayViewState.swift; path = Source/DayViewState.swift; sourceTree = "<group>"; };
+		C5EC1BED1BDA4A1A21DF5BE33510FEFF /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = Source/Localizations/ru.lproj; sourceTree = "<group>"; };
+		C7169653421B282BF0FD49EAE5AEDF9C /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "Source/Localizations/zh-Hans.lproj"; sourceTree = "<group>"; };
+		D033C50A59E1B73B5F5B7843418E5C8B /* CodableFirebase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodableFirebase-dummy.m"; sourceTree = "<group>"; };
+		D162211D0F97A365EDD725B9C9EED91F /* EventDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventDataSource.swift; path = Source/EventDataSource.swift; sourceTree = "<group>"; };
+		D67C3B5F5ED86CA90FBCF2DE8F4F7B74 /* AllDayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllDayView.swift; path = Source/Timeline/AllDayView.swift; sourceTree = "<group>"; };
+		D68C40F3A1D635665CEC2029B1EA1FCD /* FirebaseEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirebaseEncoder.swift; path = CodableFirebase/FirebaseEncoder.swift; sourceTree = "<group>"; };
+		D84BDBB79EDD4F1573ABAC2C699A44F7 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.lproj; path = Source/Localizations/nl.lproj; sourceTree = "<group>"; };
+		DC514E671135405B5177E02D2B9EFA23 /* CodableFirebase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CodableFirebase-Info.plist"; sourceTree = "<group>"; };
+		E261E887639C63317BCE9B46A711AB62 /* CodableFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableFirebase.release.xcconfig; sourceTree = "<group>"; };
+		E298F50EC016BF85882A8632B2917473 /* DayDateCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DayDateCell.swift; path = Source/Header/DaySelector/DayDateCell.swift; sourceTree = "<group>"; };
+		E505CA102714EA9D7CA268F8EC28AA28 /* CalendarKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CalendarKit-prefix.pch"; sourceTree = "<group>"; };
 		E6EB14EF7C6A66A728ACA1637E35A4D2 /* Pods_FirebaseTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FirebaseTemplate.framework; path = "Pods-FirebaseTemplate.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB5F7A077DD92657D6C7EEA21503AE9F /* CodableFirebase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodableFirebase-dummy.m"; sourceTree = "<group>"; };
-		FD20A75C4B9C4C54E5DD7251E4BB900F /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = CodableFirebase/Decoder.swift; sourceTree = "<group>"; };
+		EFADFC87A36969B73D7B75193BA33E71 /* CalendarKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CalendarKit-dummy.m"; sourceTree = "<group>"; };
+		F02A1CBEF39D8012E1AA5C4652923CB0 /* View+StackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+StackView.swift"; path = "Source/Extensions/View+StackView.swift"; sourceTree = "<group>"; };
+		F61EC561B836FBC00E2272A374FD95DB /* Value+Clamped.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Value+Clamped.swift"; path = "Source/Extensions/Value+Clamped.swift"; sourceTree = "<group>"; };
+		F7EE2859131E06A84195C265D8D752E7 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = Source/Localizations/fr.lproj; sourceTree = "<group>"; };
+		F8380B3DD078AE8C04A752A5C96322C8 /* CurrentTimeIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurrentTimeIndicator.swift; path = Source/Timeline/CurrentTimeIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A37991AF9DD441DF39498629F8A14C7B /* Frameworks */ = {
+		2B115ED5871BB17C2B8C6AA8DD6FF0B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F4BFD1729B4AA123265B79C6C522C09 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		989FA59A5878F141D62CD3206D1ED477 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783EBB2707B4AF9CD81906A8297B6F8B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDFC78FA6DE55C531175E7B8D03541B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B13E2A417CD09BDBAC8E8245A4682BB5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,13 +212,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39656CCF618C5D5348D143D98CB8A02C /* Foundation.framework in Frameworks */,
+				83788A7A607F2CE71B8B2563F7A544FF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		068F972783557178B6665E9362199899 /* CodableFirebase */ = {
+			isa = PBXGroup;
+			children = (
+				689304363134CB5617867B301E982B33 /* Decoder.swift */,
+				A980FCDC4E80BD250610F1ACE981142E /* Encoder.swift */,
+				0FAD6A7D7B41D08ED84B68F2FF1E1453 /* FirebaseDecoder.swift */,
+				D68C40F3A1D635665CEC2029B1EA1FCD /* FirebaseEncoder.swift */,
+				38EFAF0B2DBE4C262A84DA07F4D7DEF3 /* FirestoreDecoder.swift */,
+				B3D303DFAEE82DC9F028A6BD68933971 /* FirestoreEncoder.swift */,
+				375C370AEEE7017306359745255319E5 /* Support Files */,
+			);
+			name = CodableFirebase;
+			path = CodableFirebase;
+			sourceTree = "<group>";
+		};
 		2F129E3C23705328EDA3AFEDFCE0AE1E /* Pods-FirebaseTemplate */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,19 +251,73 @@
 			path = "Target Support Files/Pods-FirebaseTemplate";
 			sourceTree = "<group>";
 		};
-		4A31E505496E1183223DAFACE471B351 /* CodableFirebase */ = {
+		375C370AEEE7017306359745255319E5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FD20A75C4B9C4C54E5DD7251E4BB900F /* Decoder.swift */,
-				81B0C4721B2D8519AE0677C3490E4C6B /* Encoder.swift */,
-				7B148ED1BA1AF1F499E763ED1A2411DE /* FirebaseDecoder.swift */,
-				C6C1BFAAF301BE2FF06540DF8ECB1031 /* FirebaseEncoder.swift */,
-				CE9DA1FD4555BB6048774B09900A6662 /* FirestoreDecoder.swift */,
-				6C2523C4214495DFB9382AC11787C944 /* FirestoreEncoder.swift */,
-				BF09CF01A1E97698EA5E3F72014AEB93 /* Support Files */,
+				40E13EA3A301E0D2B382069AE90A9271 /* CodableFirebase.modulemap */,
+				D033C50A59E1B73B5F5B7843418E5C8B /* CodableFirebase-dummy.m */,
+				DC514E671135405B5177E02D2B9EFA23 /* CodableFirebase-Info.plist */,
+				A010F8ACFFD06CC0CEA1F041FA587935 /* CodableFirebase-prefix.pch */,
+				10C2BE2A4683F043D9335C86DFAA023D /* CodableFirebase-umbrella.h */,
+				2FD4F6699FC38DDBD3807A91AC1CA70B /* CodableFirebase.debug.xcconfig */,
+				E261E887639C63317BCE9B46A711AB62 /* CodableFirebase.release.xcconfig */,
 			);
-			name = CodableFirebase;
-			path = CodableFirebase;
+			name = "Support Files";
+			path = "../Target Support Files/CodableFirebase";
+			sourceTree = "<group>";
+		};
+		4242F1D6FBAC0998E9FF9CFE5F136611 /* CalendarKit */ = {
+			isa = PBXGroup;
+			children = (
+				D67C3B5F5ED86CA90FBCF2DE8F4F7B74 /* AllDayView.swift */,
+				9E99926D16AD5DA118210FCA150DEFB9 /* Array+Shift.swift */,
+				50F4098CFA159FE3D18B9A9136C59EE0 /* CalendarStyle.swift */,
+				F8380B3DD078AE8C04A752A5C96322C8 /* CurrentTimeIndicator.swift */,
+				6DF93141F7226D5C108E312DAA63BA37 /* Date+DateOnly.swift */,
+				9121E37B6CF3C5154DA426A843F1767A /* DateLabel.swift */,
+				E298F50EC016BF85882A8632B2917473 /* DayDateCell.swift */,
+				0E3CC016F8C315221BCB03D1136253E8 /* DayHeaderView.swift */,
+				837F5D48A89F01EB8BEFFC7F49121D70 /* DaySelector.swift */,
+				776685717B8F3A37BE027F389EB91BA0 /* DaySelectorController.swift */,
+				07E2AEB278F6523E05E79CCB04571154 /* DaySymbolsView.swift */,
+				9EEF52EAC95332418EA96692C5C84066 /* DayView.swift */,
+				3B572DE30836CB0D051284A9DF8E8CD8 /* DayViewController.swift */,
+				B76AADA060DC59CFDC23B0FA4A6D26DD /* DayViewState.swift */,
+				95E223257F5E00C890F01FED40D94575 /* Event.swift */,
+				D162211D0F97A365EDD725B9C9EED91F /* EventDataSource.swift */,
+				8082F7E579C85AEA3C2C0C83EE36D334 /* EventDescriptor.swift */,
+				785CB5548898BE3048D2834ABFED6E63 /* EventDescriptor+DateTools.swift */,
+				AD7B82483F2477E8C40C0713148EDEB4 /* EventEditingSnappingBehavior.swift */,
+				9051CFF39A9F112A488CA0A2D3DC41C4 /* EventLayoutAttributes.swift */,
+				3A7207E009F4AA5851BE50EBE4FFFC03 /* EventResizeHandleDotView.swift */,
+				352AFDA4352D0A795AA6D218244E2C80 /* EventResizeHandleView.swift */,
+				282A2080D64087C37845F0926A7F4282 /* EventView.swift */,
+				1EB01580911082B79A4650C04AEBBB0C /* Locale+24Hour.swift */,
+				B08700BC2C13DA475B49E10F0B623234 /* Localization.swift */,
+				502E02023EAA042A055C0679C7F8DF9C /* ReusePool.swift */,
+				A0B90ED4012E5E5222DEB325EB57EBD1 /* SnapTo15MinuteIntervals.swift */,
+				3425ACBF11A7400784CF0CF84F818218 /* SwipeLabelView.swift */,
+				8450FFC0D83D423117CB2C2B04A67912 /* TimelineContainer.swift */,
+				A6B9E89C87873F43539CCE4BD7AD4850 /* TimelineContainerController.swift */,
+				1C97F2AFCDE6860DA40E260D859DF766 /* TimelinePagerView.swift */,
+				B5D45FE0F9CBD98539897C983A062AFA /* TimelineView.swift */,
+				12A8234662BC235C724C1B84EF8E17C9 /* TimeStringsFactory.swift */,
+				990D88263CCF2BDB3431A471A838FBCB /* UIColor+SystemColors.swift */,
+				F61EC561B836FBC00E2272A374FD95DB /* Value+Clamped.swift */,
+				F02A1CBEF39D8012E1AA5C4652923CB0 /* View+StackView.swift */,
+				8F5128B660E86E737E35CE43908CAD2B /* Resources */,
+				92B450C3EC5AC8ACDB21F5DB3AC6463C /* Support Files */,
+			);
+			name = CalendarKit;
+			path = CalendarKit;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7D15EE9843288588D07A2965F79E1227 /* Targets Support Files */ = {
@@ -120,36 +328,50 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9F15090DD4CBFED4D2D542B3521A388F /* Products */ = {
+		8F5128B660E86E737E35CE43908CAD2B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				67F9A5C40FFCD7FAF7F32DBA9283DE1A /* da.lproj */,
+				2E5A32AA8FCE3E5FE18748DE597FC5C7 /* de.lproj */,
+				83FDB2F9A16CFEF8D40648F74F22BE53 /* en.lproj */,
+				B3E59253602B7DFF2FA30B850CA9569F /* es.lproj */,
+				F7EE2859131E06A84195C265D8D752E7 /* fr.lproj */,
+				223AC36654785700AC6B503F20CEEAF3 /* he.lproj */,
+				A26C28A5D078B4156B7D23D53FBBA0E6 /* it.lproj */,
+				D84BDBB79EDD4F1573ABAC2C699A44F7 /* nl.lproj */,
+				C5EC1BED1BDA4A1A21DF5BE33510FEFF /* ru.lproj */,
+				920702A2A92134206B5A8DE47FE9CAEF /* sv.lproj */,
+				C7169653421B282BF0FD49EAE5AEDF9C /* zh-Hans.lproj */,
+				A03B87759DEF8DA51D3AE57338341DBE /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		92B450C3EC5AC8ACDB21F5DB3AC6463C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0B2D12B9EF45E85E59A857628583964 /* CalendarKit.modulemap */,
+				EFADFC87A36969B73D7B75193BA33E71 /* CalendarKit-dummy.m */,
+				1C9B93A7E8CE07404B706239A84C5DCE /* CalendarKit-Info.plist */,
+				E505CA102714EA9D7CA268F8EC28AA28 /* CalendarKit-prefix.pch */,
+				B05E5205FD3E17BFACDC0D0514428D1C /* CalendarKit-umbrella.h */,
+				1A3B72FE66FC6B9B9A0AD00BE81B46FC /* CalendarKit.debug.xcconfig */,
+				1F57286F276A19DCA2DA2CDC08E063FD /* CalendarKit.release.xcconfig */,
+				51E2BA9C545E86C4AB50BBE4F3D747A9 /* ResourceBundle-CalendarKit-CalendarKit-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CalendarKit";
+			sourceTree = "<group>";
+		};
+		B09FF9C7AB0D4B714BBC6B7792D06D23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A828DFCF7CF3511DA7A8E0C6889A3180 /* CalendarKit.bundle */,
+				6F7D47B3E239EA3D8D10DEB990A39B29 /* CalendarKit.framework */,
 				4A94FC58A21534580DADDEF0DD4CCDB9 /* CodableFirebase.framework */,
 				E6EB14EF7C6A66A728ACA1637E35A4D2 /* Pods_FirebaseTemplate.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		BF09CF01A1E97698EA5E3F72014AEB93 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C5BD22CC6B2FBCBB6EBDBEEB1B9AAE0D /* CodableFirebase.modulemap */,
-				EB5F7A077DD92657D6C7EEA21503AE9F /* CodableFirebase-dummy.m */,
-				CC692CCA5E0D46E68F4F33B538735B32 /* CodableFirebase-Info.plist */,
-				58684AA03E8976981239BC7DBBA42B30 /* CodableFirebase-prefix.pch */,
-				BA5E99B3BA56A80CA8D19C30A97834A4 /* CodableFirebase-umbrella.h */,
-				B095273A490C49951F51010B277DB8C7 /* CodableFirebase.debug.xcconfig */,
-				475EA0F82A5E33C6AF6965CDB66F68A3 /* CodableFirebase.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CodableFirebase";
-			sourceTree = "<group>";
-		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -157,8 +379,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				EBA3918496F8E8DE11D6E190526A5D67 /* Pods */,
-				9F15090DD4CBFED4D2D542B3521A388F /* Products */,
+				D42B907A5F73F3F63996D5EDA1AC99F7 /* Pods */,
+				B09FF9C7AB0D4B714BBC6B7792D06D23 /* Products */,
 				7D15EE9843288588D07A2965F79E1227 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -166,15 +388,16 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EBA3918496F8E8DE11D6E190526A5D67 /* Pods */ = {
+		D42B907A5F73F3F63996D5EDA1AC99F7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4A31E505496E1183223DAFACE471B351 /* CodableFirebase */,
+				4242F1D6FBAC0998E9FF9CFE5F136611 /* CalendarKit */,
+				068F972783557178B6665E9362199899 /* CodableFirebase */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -182,6 +405,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		00790C2BFF0EFC1F814F4ABD302911B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035E94A1FE2AA86C0298573A1E34887A /* Pods-FirebaseTemplate-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10F4561A796DCD27D60D68445094A0AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC94170032F01AB1CD94DE99251E592 /* CalendarKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A55180BCB3E0D054896C6817579C785 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,30 +429,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD004FD4BC40779D245656ED95014CC4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1EF5A090A24C3563AECC79F552978ED5 /* Pods-FirebaseTemplate-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AA0B4E350B1956ED5296370BE5DE0070 /* Pods-FirebaseTemplate */ = {
+		04904EE15AFF91054117F3F364502338 /* CalendarKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A08EB309836B95E706A4B0B4686FCB3 /* Build configuration list for PBXNativeTarget "Pods-FirebaseTemplate" */;
+			buildConfigurationList = 2A9AA8209383331C0EFE499C8867FE18 /* Build configuration list for PBXNativeTarget "CalendarKit" */;
 			buildPhases = (
-				BD004FD4BC40779D245656ED95014CC4 /* Headers */,
-				7266D7628A745DD219306674996D6728 /* Sources */,
-				A37991AF9DD441DF39498629F8A14C7B /* Frameworks */,
-				A1C130C2DE69740A502B5A88470C5AFA /* Resources */,
+				10F4561A796DCD27D60D68445094A0AA /* Headers */,
+				81D7C60184E84A13EA6D249DFC900709 /* Sources */,
+				DDFC78FA6DE55C531175E7B8D03541B6 /* Frameworks */,
+				EBE6432FCA9DCB7656524C12097A8F43 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B087D4671FDABCD3FE7B6D47B04150ED /* PBXTargetDependency */,
+				5AD1D74AC84C3A5FB3FC0B74C118BBFD /* PBXTargetDependency */,
+			);
+			name = CalendarKit;
+			productName = CalendarKit;
+			productReference = 6F7D47B3E239EA3D8D10DEB990A39B29 /* CalendarKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1874CCA159285F971FAABEC7E5097823 /* CalendarKit-CalendarKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A478D432D8B4FDD7436179F4385511AC /* Build configuration list for PBXNativeTarget "CalendarKit-CalendarKit" */;
+			buildPhases = (
+				5BCD0B4EC7D5CF476C6A5AB2EFEE3D64 /* Sources */,
+				2B115ED5871BB17C2B8C6AA8DD6FF0B3 /* Frameworks */,
+				5370105F64FB4A6C1A5F94B5698A0696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CalendarKit-CalendarKit";
+			productName = "CalendarKit-CalendarKit";
+			productReference = A828DFCF7CF3511DA7A8E0C6889A3180 /* CalendarKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		AA0B4E350B1956ED5296370BE5DE0070 /* Pods-FirebaseTemplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D59B275D626CF4D3DC1265EF7EA73036 /* Build configuration list for PBXNativeTarget "Pods-FirebaseTemplate" */;
+			buildPhases = (
+				00790C2BFF0EFC1F814F4ABD302911B7 /* Headers */,
+				33D0A2895A3910220C06F0246BD0C14C /* Sources */,
+				989FA59A5878F141D62CD3206D1ED477 /* Frameworks */,
+				357F3B726361774C229F5340CCBE0236 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE047010E96BA636090D9F2177357399 /* PBXTargetDependency */,
+				70973D52C4956053796E5320F220EADC /* PBXTargetDependency */,
 			);
 			name = "Pods-FirebaseTemplate";
 			productName = "Pods-FirebaseTemplate";
@@ -248,7 +516,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -256,10 +524,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 9F15090DD4CBFED4D2D542B3521A388F /* Products */;
+			productRefGroup = B09FF9C7AB0D4B714BBC6B7792D06D23 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				04904EE15AFF91054117F3F364502338 /* CalendarKit */,
+				1874CCA159285F971FAABEC7E5097823 /* CalendarKit-CalendarKit */,
 				E348382FA7E1F8A639AFBFF3F8C4FC04 /* CodableFirebase */,
 				AA0B4E350B1956ED5296370BE5DE0070 /* Pods-FirebaseTemplate */,
 			);
@@ -267,6 +537,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		357F3B726361774C229F5340CCBE0236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DC333FF86BF899A871CB29F0D9306F6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,21 +551,92 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1C130C2DE69740A502B5A88470C5AFA /* Resources */ = {
+		5370105F64FB4A6C1A5F94B5698A0696 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF43A11050E063CE6402086BEB815ED2 /* da.lproj in Resources */,
+				6B42AACA15932993F103F17E28DF64B4 /* de.lproj in Resources */,
+				A34C2F256093A0338C49B314A1166FE1 /* en.lproj in Resources */,
+				E6901D53539AEC8DD05F013B96DC3A87 /* es.lproj in Resources */,
+				95AC59330EABDF0D43444E5F4FA97E40 /* fr.lproj in Resources */,
+				D2574F637E4B80FB113907C04F4343E2 /* he.lproj in Resources */,
+				17042F3195D64EFF761BE8425C65E12D /* it.lproj in Resources */,
+				77F995163069A8E90040396894737BAD /* nl.lproj in Resources */,
+				84D9CED67E02D9DBBE38F2E128758F8D /* ru.lproj in Resources */,
+				A799BD4CF867FD84ABA91C231992855F /* sv.lproj in Resources */,
+				DC97FD9CDB1F9C53DED17CBD2BA27DD1 /* zh-Hans.lproj in Resources */,
+				30676CFB4F8B01A43703C2DDF28B85B9 /* zh-Hant.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE6432FCA9DCB7656524C12097A8F43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E335557B1B6DC6F726B686E201C084B2 /* CalendarKit.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7266D7628A745DD219306674996D6728 /* Sources */ = {
+		33D0A2895A3910220C06F0246BD0C14C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F074EF7AD311BF67B4EA8FBE495D829 /* Pods-FirebaseTemplate-dummy.m in Sources */,
+				462237FF0745CE6C4FEDCFB57BF5D47E /* Pods-FirebaseTemplate-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BCD0B4EC7D5CF476C6A5AB2EFEE3D64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D7C60184E84A13EA6D249DFC900709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5EDAC9274BD4215B2D8E2EC0EAF04BF /* AllDayView.swift in Sources */,
+				630FA2A10DA73EC7D0853DC2335709DE /* Array+Shift.swift in Sources */,
+				86222FE257981E64CB28B14DC24CF4AC /* CalendarKit-dummy.m in Sources */,
+				8CD2F2F8CE0B248609D29CC87BE1DA96 /* CalendarStyle.swift in Sources */,
+				A1121F344DF0774527B5896B05EC1723 /* CurrentTimeIndicator.swift in Sources */,
+				120F73851BC85F08A4B123E99AB32714 /* Date+DateOnly.swift in Sources */,
+				1FD15270EEDE67DEC6DBFCFAABC3BF2B /* DateLabel.swift in Sources */,
+				7901671E245EF65A676D15ED9D60B400 /* DayDateCell.swift in Sources */,
+				B932C5C5DA325958F6199DC12FAFC851 /* DayHeaderView.swift in Sources */,
+				FEDB303D24FBEA5FB97D25FB93A1C13F /* DaySelector.swift in Sources */,
+				11CD140574B9D62100E4F389DE034A5C /* DaySelectorController.swift in Sources */,
+				076364BD98A980B9AD892DC979038281 /* DaySymbolsView.swift in Sources */,
+				500A73CC267D002E18E04FB52D98D209 /* DayView.swift in Sources */,
+				F6ABA6C6474738B8BFC658167E6FDD55 /* DayViewController.swift in Sources */,
+				E7064DD89D3EF1EB73DDFA22AD361614 /* DayViewState.swift in Sources */,
+				2F47C033939CFFF826CD8F1BB15A6BA1 /* Event.swift in Sources */,
+				3E17E112F61A6948C05CD41CF257ADB3 /* EventDataSource.swift in Sources */,
+				04483B89E9E1D8DA99F6AF43381F44FF /* EventDescriptor+DateTools.swift in Sources */,
+				17DB396CC1E8399FA4B47EB4C51F8320 /* EventDescriptor.swift in Sources */,
+				5CCCA7624F083975761A53DD73D55AA8 /* EventEditingSnappingBehavior.swift in Sources */,
+				087EEF6B9BEF5988941A58A45983344E /* EventLayoutAttributes.swift in Sources */,
+				FEAC5DAAA678BA0792FC8F2F24F1BAE0 /* EventResizeHandleDotView.swift in Sources */,
+				FE356CDE285A4A859CA357A6F51EF745 /* EventResizeHandleView.swift in Sources */,
+				D6A0494E4036EC3A7D72AB2EA6B2D09A /* EventView.swift in Sources */,
+				B51F0E9F7FF2F05B080483AE317C0139 /* Locale+24Hour.swift in Sources */,
+				A501F6AB864B3660B505B7073A9DAB14 /* Localization.swift in Sources */,
+				57E7C33794C4EA69653A26BFC1E82B79 /* ReusePool.swift in Sources */,
+				1E21B53E3706F59A07B2E04372FBBAF1 /* SnapTo15MinuteIntervals.swift in Sources */,
+				3CF9E82110BF37FEE6C53EB0C97AED8E /* SwipeLabelView.swift in Sources */,
+				818F0144157CF6A9ED8D13541BBA8076 /* TimelineContainer.swift in Sources */,
+				EEEE63FE9FD0AC26A1956E8ED73755E9 /* TimelineContainerController.swift in Sources */,
+				58BA0666C6E49395D127BC404883369E /* TimelinePagerView.swift in Sources */,
+				5E988BF0E187A08DA37610E8B805DF08 /* TimelineView.swift in Sources */,
+				E7C41F90ED6F046C016889A8CB5F6336 /* TimeStringsFactory.swift in Sources */,
+				5F112B13EB2BF65800C294391799DF71 /* UIColor+SystemColors.swift in Sources */,
+				22696CDFDA284C062A01E442746F2772 /* Value+Clamped.swift in Sources */,
+				489EEC37FAB12C8D79C69FFC3B6419F9 /* View+StackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,20 +657,33 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B087D4671FDABCD3FE7B6D47B04150ED /* PBXTargetDependency */ = {
+		5AD1D74AC84C3A5FB3FC0B74C118BBFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CalendarKit-CalendarKit";
+			target = 1874CCA159285F971FAABEC7E5097823 /* CalendarKit-CalendarKit */;
+			targetProxy = 369A30175C3C7D788335410190E79AB6 /* PBXContainerItemProxy */;
+		};
+		70973D52C4956053796E5320F220EADC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CodableFirebase;
 			target = E348382FA7E1F8A639AFBFF3F8C4FC04 /* CodableFirebase */;
-			targetProxy = 216620130DE22A4A7B030602DF0536B0 /* PBXContainerItemProxy */;
+			targetProxy = 2BD5B79A57B3C66E17EEB9A658309C41 /* PBXContainerItemProxy */;
+		};
+		EE047010E96BA636090D9F2177357399 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CalendarKit;
+			target = 04904EE15AFF91054117F3F364502338 /* CalendarKit */;
+			targetProxy = 8BA6DF8B05E28E9190F0212A9EE6A2D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		46AE3DDC9333D084E80DCF6303785943 /* Debug */ = {
+		2FD352C4A9AFE8B503E1A1FBDCC1C5D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B095273A490C49951F51010B277DB8C7 /* CodableFirebase.debug.xcconfig */;
+			baseConfigurationReference = 6EB9E0010C927600424072AD4D41497F /* Pods-FirebaseTemplate.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -331,33 +692,35 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CodableFirebase/CodableFirebase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CodableFirebase/CodableFirebase-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/CodableFirebase/CodableFirebase.modulemap";
-				PRODUCT_MODULE_NAME = CodableFirebase;
-				PRODUCT_NAME = CodableFirebase;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		4756602310F57B68E7C56BFA0F7977C0 /* Release */ = {
+		334B2656ED4981F78EF603283275A7F0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 475EA0F82A5E33C6AF6965CDB66F68A3 /* CodableFirebase.release.xcconfig */;
+			baseConfigurationReference = 178CF7B1DD812F16410D2D44A41352BD /* Pods-FirebaseTemplate.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -366,22 +729,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CodableFirebase/CodableFirebase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CodableFirebase/CodableFirebase-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/CodableFirebase/CodableFirebase.modulemap";
-				PRODUCT_MODULE_NAME = CodableFirebase;
-				PRODUCT_NAME = CodableFirebase;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -389,10 +753,11 @@
 			};
 			name = Release;
 		};
-		6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */ = {
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -415,6 +780,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -440,7 +806,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -453,10 +819,111 @@
 			};
 			name = Debug;
 		};
-		7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */ = {
+		4E4DF221E610A4881CFE5D2BEE370C76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A3B72FE66FC6B9B9A0AD00BE81B46FC /* CalendarKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CalendarKit/CalendarKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CalendarKit/CalendarKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CalendarKit/CalendarKit.modulemap";
+				PRODUCT_MODULE_NAME = CalendarKit;
+				PRODUCT_NAME = CalendarKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		50DD146C13DF97E4AE9BF012739D2320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD4F6699FC38DDBD3807A91AC1CA70B /* CodableFirebase.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CodableFirebase/CodableFirebase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CodableFirebase/CodableFirebase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CodableFirebase/CodableFirebase.modulemap";
+				PRODUCT_MODULE_NAME = CodableFirebase;
+				PRODUCT_NAME = CodableFirebase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5262A8A94603E93D4A35ED581F66B7C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F57286F276A19DCA2DA2CDC08E063FD /* CalendarKit.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CalendarKit";
+				IBSC_MODULE = CalendarKit;
+				INFOPLIST_FILE = "Target Support Files/CalendarKit/ResourceBundle-CalendarKit-CalendarKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = CalendarKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6EAD0D42EC4B5DB6CBEB694B7CB4CB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A3B72FE66FC6B9B9A0AD00BE81B46FC /* CalendarKit.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CalendarKit";
+				IBSC_MODULE = CalendarKit;
+				INFOPLIST_FILE = "Target Support Files/CalendarKit/ResourceBundle-CalendarKit-CalendarKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = CalendarKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -479,6 +946,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -501,7 +969,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,13 +981,10 @@
 			};
 			name = Release;
 		};
-		C89485DE14454FE9F9FAE6458928D0FC /* Debug */ = {
+		BD468AF4C39161D6568D5165A1C3FD48 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EB9E0010C927600424072AD4D41497F /* Pods-FirebaseTemplate.debug.xcconfig */;
+			baseConfigurationReference = 1F57286F276A19DCA2DA2CDC08E063FD /* CalendarKit.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -528,36 +993,33 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CalendarKit/CalendarKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CalendarKit/CalendarKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/CalendarKit/CalendarKit.modulemap";
+				PRODUCT_MODULE_NAME = CalendarKit;
+				PRODUCT_NAME = CalendarKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		FC78436F1AE6C19893183AD93CFA9273 /* Release */ = {
+		CCA605A27ED1936D1D552BA6CED52313 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 178CF7B1DD812F16410D2D44A41352BD /* Pods-FirebaseTemplate.release.xcconfig */;
+			baseConfigurationReference = E261E887639C63317BCE9B46A711AB62 /* CodableFirebase.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -566,23 +1028,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CodableFirebase/CodableFirebase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CodableFirebase/CodableFirebase-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/CodableFirebase/CodableFirebase.modulemap";
+				PRODUCT_MODULE_NAME = CodableFirebase;
+				PRODUCT_NAME = CodableFirebase;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -593,11 +1054,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A08EB309836B95E706A4B0B4686FCB3 /* Build configuration list for PBXNativeTarget "Pods-FirebaseTemplate" */ = {
+		2A9AA8209383331C0EFE499C8867FE18 /* Build configuration list for PBXNativeTarget "CalendarKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C89485DE14454FE9F9FAE6458928D0FC /* Debug */,
-				FC78436F1AE6C19893183AD93CFA9273 /* Release */,
+				4E4DF221E610A4881CFE5D2BEE370C76 /* Debug */,
+				BD468AF4C39161D6568D5165A1C3FD48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -605,8 +1066,17 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */,
-				7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */,
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A478D432D8B4FDD7436179F4385511AC /* Build configuration list for PBXNativeTarget "CalendarKit-CalendarKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EAD0D42EC4B5DB6CBEB694B7CB4CB19 /* Debug */,
+				5262A8A94603E93D4A35ED581F66B7C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -614,8 +1084,17 @@
 		AF88A37BB6DD3E71FA6501EA0A4AB22E /* Build configuration list for PBXNativeTarget "CodableFirebase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46AE3DDC9333D084E80DCF6303785943 /* Debug */,
-				4756602310F57B68E7C56BFA0F7977C0 /* Release */,
+				50DD146C13DF97E4AE9BF012739D2320 /* Debug */,
+				CCA605A27ED1936D1D552BA6CED52313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D59B275D626CF4D3DC1265EF7EA73036 /* Build configuration list for PBXNativeTarget "Pods-FirebaseTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FD352C4A9AFE8B503E1A1FBDCC1C5D0 /* Debug */,
+				334B2656ED4981F78EF603283275A7F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,5 +6,6 @@ target 'FirebaseTemplate' do
   use_frameworks!
    pod 'CodableFirebase'
   # Pods for FirebaseTemplate
-
+  pod 'CalendarKit'
+#  pod 'KVKCalendar'
 end

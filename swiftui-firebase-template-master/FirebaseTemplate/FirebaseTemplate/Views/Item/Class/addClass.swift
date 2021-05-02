@@ -12,8 +12,8 @@ import SwiftUI
 struct addClass: View {
     @EnvironmentObject var classesEnv: ClassesEnv
     @State var className: String = ""
-    @State var classStart: String = ""
-    @State var classEnd: String = ""
+    @State var classStart = Date()
+    @State var classEnd = Date()
     @State var classColor: String = ""
     var body: some View {
         ZStack {
@@ -54,30 +54,22 @@ struct addClass: View {
                     }
                     
                     VStack(alignment: .leading) {
-                        Text("Starts")
-                            .foregroundColor(Color("Primary"))
-                            .padding(.leading, 10)
-                        TextField("class start date", text: $classStart)
+                        DatePicker("Starts: : ", selection: $classStart, in: Date()...)
                             .frame(width: 320, height: 55)
                             .padding(10)
-                            .background(Color("Primary"))
                             .cornerRadius(15)
-                            .foregroundColor(Color("BG"))
+                            .foregroundColor(Color("Primary"))
                     }
                     VStack(alignment: .leading) {
-                        Text("Ends")
-                            .foregroundColor(Color("Primary"))
-                            .padding(.leading, 10)
-                        TextField("class end date", text: $classEnd)
+                        DatePicker("Ends: ", selection: $classEnd, in: Date()...)
                             .frame(width: 320, height: 55)
                             .padding(10)
-                            .background(Color("Primary"))
                             .cornerRadius(15)
-                            .foregroundColor(Color("BG"))
+                            .foregroundColor(Color("Primary"))
                     }
                     Button(action: {
                         
-                        let addedClass = Classes(name: className, start: classStart, ends: classEnd, color: classColor, id: UUID())
+                        let addedClass = Classes(name: className, start: classStart.description, ends: classEnd.description, color: classColor, id: UUID())
                         classesEnv.addItem(item: addedClass)
 
                     }, label: {
@@ -105,7 +97,6 @@ struct AddItem_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
             addClass()
-                .environmentObject(ItemsEnv())
         }
     }
 }

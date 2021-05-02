@@ -14,7 +14,7 @@ struct editLecture: View {
     @EnvironmentObject var lectureEnv: LectureEnv
     @State var lectureName: String = ""
     @State var lectureDate: String = ""
-    @State var lectureTime: String = ""
+    @State var lectureTime = Date()
     @State var lectureColor: String = ""
 
     var body: some View {
@@ -67,19 +67,16 @@ struct editLecture: View {
                             .foregroundColor(Color("BG"))
                     }
                     VStack(alignment: .leading) {
-                        Text("Time")
-                            .foregroundColor(Color("Primary"))
-                            .padding(.leading, 10)
-                        TextField("lecture time", text: $lectureTime)
+                        DatePicker("Time: ", selection: $lectureTime, in: Date()..., displayedComponents: .hourAndMinute)
                             .frame(width: 320, height: 55)
                             .padding(10)
-                            .background(Color("Primary"))
                             .cornerRadius(15)
-                            .foregroundColor(Color("BG"))
+                            .foregroundColor(Color("Primary"))
+
                     }
                     Button(action: {
                         
-                        let editedLecture = Lecture(name: lectureName, time: lectureTime, date: lectureDate, color: lectureColor, id: lecture.id)
+                        let editedLecture = Lecture(name: lectureName, time: lectureTime.timeIntervalSince1970, date: lectureDate, color: lectureColor, id: lecture.id)
                         lectureEnv.editLecture(item: editedLecture, classId: "\(classs.id)", lectureId: "\(lecture.id)")
                         
                     }, label: {
